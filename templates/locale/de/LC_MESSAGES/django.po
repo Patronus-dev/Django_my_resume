@@ -8,86 +8,87 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 00:33+0330\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2024-08-09 23:38+0330\n"
+"PO-Revision-Date: 2024-08-09 23:41+0330\n"
+"Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\home.html:7 .\home.html:36
 msgid "Home"
-msgstr ""
+msgstr "Startseite"
 
 #: .\home.html:37
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: .\home.html:38
 msgid "Services"
-msgstr ""
+msgstr "Dienstleistungen"
 
-#: .\home.html:39 .\home.html:265
+#: .\home.html:39
 msgid "Resume"
-msgstr ""
+msgstr "Über"
 
 #: .\home.html:40
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: .\home.html:62
 msgid "I Am MEHDI"
-msgstr ""
+msgstr "Ich Heiße MEHDI"
 
 #: .\home.html:64
 msgid "WEB DEVELOPER"
-msgstr ""
+msgstr "WEB-ENTWICKLER"
 
 #: .\home.html:64
 msgid "FREELANCER"
-msgstr ""
+msgstr "FREELANCER"
 
 #: .\home.html:64
 msgid "BACKEND"
-msgstr ""
+msgstr "BACKEND"
 
 #: .\home.html:69
 msgid "Email"
-msgstr ""
+msgstr "E-Mail"
 
 #: .\home.html:72
 msgid "Phone"
-msgstr ""
+msgstr "Telefon"
 
 #: .\home.html:75
 msgid "Address"
-msgstr ""
+msgstr "Adresse"
 
 #: .\home.html:75
 msgid "Tehran"
-msgstr ""
+msgstr "Tehran"
 
 #: .\home.html:78
 msgid "Nationality"
-msgstr ""
+msgstr "Heimatland"
 
 #: .\home.html:78
 msgid "Persian"
-msgstr ""
+msgstr "Persisch"
 
 #: .\home.html:91
 msgid "Profile"
-msgstr ""
+msgstr "Profil"
 
 #: .\home.html:104
 msgid "Intro"
-msgstr ""
+msgstr "Einleitung"
 
 #: .\home.html:105
 msgid "Hi, my name is Mehdi Sabz."
-msgstr ""
+msgstr "Hallo, mein Name ist Mehdi Sabz."
 
 #: .\home.html:108
 msgid ""
@@ -95,12 +96,18 @@ msgid ""
 "developer who enjoys a wide range of hobbies, such as building web "
 "applications and coding. For me, it is more like a hobby than a job."
 msgstr ""
+"Die Person, die Websites erstellt und entwickelt. Ich bin Programmierer und "
+"Webentwickler und habe viele verschiedene Hobbys, wie das Erstellen von "
+"Webanwendungen und das Programmieren. Für mich ist das mehr ein Hobby als "
+"ein Job."
 
 #: .\home.html:113
 msgid ""
 "I can turn Caffeine into complex programs. So either Coffee is a magic "
 "potion or I am a wizard !"
 msgstr ""
+"Ich kann Koffein in komplexe Programme umwandeln. Entweder ist Kaffee ein "
+"Zaubertrank oder ich bin ein Zauberer!"
 
 #: .\home.html:118
 msgid ""
@@ -110,231 +117,255 @@ msgid ""
 "resistant to cyber attacks. With its \"batteries included\"  philosophy, "
 "Django meets all web development needs in a comprehensive package."
 msgstr ""
+"Django ist ein leistungsstarkes und sicheres Webframework für die "
+"Entwicklung von Websites und Webanwendungen. Dieses Framework bietet "
+"erweiterte Tools und Sicherheitsfunktionen, mit denen Entwickler "
+"leistungsstarke Anwendungen erstellen können, die gegen Cyberangriffe "
+"resistent sind. Mit seiner Philosophie „Batterien inklusive“ erfüllt Django "
+"alle Anforderungen der Webentwicklung in einem umfassenden Paket."
 
 #: .\home.html:122
 msgid "Skills"
-msgstr ""
+msgstr "Fähigkeiten"
 
 #: .\home.html:124
 msgid "Python"
-msgstr ""
+msgstr "Python"
 
 #: .\home.html:132
 msgid "Django"
-msgstr ""
+msgstr "Django"
 
 #: .\home.html:140 .\home.html:174
 msgid "Web Design"
-msgstr ""
+msgstr "Webdesign"
 
 #: .\home.html:148
 msgid "HTML & CSS"
-msgstr ""
+msgstr "HTML & CSS"
 
 #: .\home.html:166
 msgid "What I'm Doing"
-msgstr ""
+msgstr "Was mache ich genau"
 
 #: .\home.html:167
 msgid "I am a web developer with Python and Django."
-msgstr ""
+msgstr "Ich bin Webentwickler mit Python und Django."
 
 #: .\home.html:175
 msgid ""
 "Design responsive,user-friendly websites with modern aesthetics,also "
 "provides an intuitive user experience."
 msgstr ""
+"Entwerfen Sie ansprechende, benutzerfreundliche Websites mit moderner "
+"Ästhetik, die auch ein intuitives Benutzererlebnis bieten."
 
 #: .\home.html:182
 msgid "Development"
-msgstr ""
+msgstr "Entwicklung"
 
 #: .\home.html:183
 msgid ""
-"Create secure and scalable web applications using Python and Django,"
-"emphasizing high performance and reliability."
+"Create secure and scalable web applications using Python and "
+"Django,emphasizing high performance and reliability."
 msgstr ""
+"Erstellen Sie sichere und skalierbare Webanwendungen mit Python und Django, "
+"wobei Sie Wert auf hohe Leistung und Zuverlässigkeit legen."
 
 #: .\home.html:190
 msgid "Social Media"
-msgstr ""
+msgstr "Soziale Medien"
 
 #: .\home.html:191
 msgid ""
-"In today's world, presence on social networks as well as website has a great "
-"impact on your business and introduction to customers."
+"In today's world, presence on social networks as well as website has a great"
+" impact on your business and introduction to customers."
 msgstr ""
+"In der heutigen Welt hat die Präsenz in sozialen Netzwerken sowie auf "
+"Websites einen großen Einfluss auf Ihr Geschäft und Ihre Vorstellung bei den"
+" Kunden."
 
 #: .\home.html:198
 msgid "Branding"
-msgstr ""
+msgstr "Markenbildung"
 
 #: .\home.html:199
 msgid ""
 "Having a website significantly increases the visibility and credibility of "
 "the business and provides a digital storefront to the audience."
 msgstr ""
+"Eine Website steigert die Sichtbarkeit und Glaubwürdigkeit des Unternehmens "
+"beträchtlich und bietet der Zielgruppe ein digitales Schaufenster."
 
 #: .\home.html:206
 msgid "Strategy"
-msgstr ""
+msgstr "Strategie"
 
 #: .\home.html:207
 msgid ""
 "Focus on increasing brand awareness, creating customer engagement, and "
 "achieving business goals."
 msgstr ""
+"Konzentrieren Sie sich darauf, die Markenbekanntheit zu steigern, "
+"Kundenbindung zu schaffen und Geschäftsziele zu erreichen."
 
 #: .\home.html:214
 msgid "Consulting"
-msgstr ""
+msgstr "Beratung"
 
 #: .\home.html:215
 msgid ""
 "Tailored solutions to enhance online presence, improve user experience,and "
 "achieve business goals effectively."
 msgstr ""
+"Maßgeschneiderte Lösungen zur Erweiterung der Online-Präsenz, Verbesserung "
+"des Benutzererlebnisses und effektiven Erreichung von Geschäftszielen."
 
 #: .\home.html:232
 msgid "Programming Languages"
-msgstr ""
+msgstr "Programmier sprachen"
 
 #: .\home.html:239
 msgid "Successful Project"
-msgstr ""
+msgstr "Erfolgreiches Projekt"
 
 #: .\home.html:246
 msgid "Certificates and Documents"
-msgstr ""
+msgstr "Zertifikate und Dokumente"
 
 #: .\home.html:253
 msgid "Workshops and Training"
-msgstr ""
+msgstr "Workshops und Schulungen"
+
+#: .\home.html:265
+#| msgid "Resume"
+msgid "Resume "
+msgstr "Wieder aufnehmen"
 
 #: .\home.html:270
 msgid "Education"
-msgstr ""
+msgstr "Ausbildung"
 
 #: .\home.html:272
 msgid "Degrees"
-msgstr ""
+msgstr "Abschlüsse"
 
 #: .\home.html:274
 msgid "Mathematics and physics Diploma."
-msgstr ""
+msgstr "Diplom in Mathematik und Physik."
 
 #: .\home.html:277
 msgid "Computer Science Diploma."
-msgstr ""
+msgstr "Diplom in Informatik."
 
 #: .\home.html:280
 msgid "Programming Courses"
-msgstr ""
+msgstr "Programmier kurse"
 
 #: .\home.html:282
 msgid "HTML & CSS certificate."
-msgstr ""
+msgstr "HTML & CSS Zertifikat."
 
 #: .\home.html:283 .\home.html:289 .\home.html:294 .\home.html:299
 msgid "From"
-msgstr ""
+msgstr "Von"
 
 #: .\home.html:284 .\home.html:290 .\home.html:295 .\home.html:300
 msgid "Cando"
-msgstr ""
+msgstr "Cando"
 
 #: .\home.html:285
 msgid " Computer Science Engineering institution."
-msgstr ""
+msgstr "Computer Science Engineering Institution"
 
 #: .\home.html:288
 msgid "Python Foundation Master certificate."
-msgstr ""
+msgstr "Python Foundation Master-Zertifikat."
 
 #: .\home.html:291 .\home.html:296 .\home.html:301
 msgid "Computer Science Engineering institution."
-msgstr ""
+msgstr "Computer Science Engineering Institution"
 
 #: .\home.html:293
 msgid "Python Advanced Master certificate."
-msgstr ""
+msgstr "Python Advanced Master-Zertifikat."
 
 #: .\home.html:298
 msgid "Django certificate."
-msgstr ""
+msgstr "Django-Zertifikat"
 
 #: .\home.html:306
 msgid "About me"
-msgstr ""
+msgstr "Über mich"
 
 #: .\home.html:308
 msgid "Languages"
-msgstr ""
+msgstr "Sprachen"
 
 #: .\home.html:309
 msgid "Persian "
-msgstr ""
+msgstr "Persisch"
 
 #: .\home.html:311
 msgid "Turkish (Azerbaijan)"
-msgstr ""
+msgstr "Türkisch (Aserbaidschan)"
 
 #: .\home.html:314
 msgid "Deutsch"
-msgstr ""
+msgstr "Deutsch"
 
 #: .\home.html:317
 msgid "English"
-msgstr ""
+msgstr "Englisch"
 
 #: .\home.html:321
 msgid "Hobbies"
-msgstr ""
+msgstr "Hobbys"
 
 #: .\home.html:322
 msgid "Traveling"
-msgstr ""
+msgstr "Reisen"
 
 #: .\home.html:323
 msgid "Gaming"
-msgstr ""
+msgstr "Videospiele"
 
 #: .\home.html:324
 msgid "Meeting Family & Friends"
-msgstr ""
+msgstr "Familie & Freunde treffen"
 
 #: .\home.html:325
 msgid "Music"
-msgstr ""
+msgstr "Musik"
 
 #: .\home.html:326
 msgid "Pets"
-msgstr ""
+msgstr "Haustiere"
 
 #: .\home.html:329
 msgid "Other Skills"
-msgstr ""
+msgstr "Andere Fähigkeiten"
 
 #: .\home.html:330
 msgid "2019 to Present"
-msgstr ""
+msgstr "2019 bis heute"
 
 #: .\home.html:331
 msgid "Accountant"
-msgstr ""
+msgstr "Buchhalter"
 
 #: .\home.html:332
 msgid "Working as an accountant in a private company."
-msgstr ""
+msgstr "Arbeite als Buchhalter in einem privaten Firma."
 
 #: .\home.html:346
 msgid "Latest blogs"
-msgstr ""
+msgstr "Die neusten Blogs"
 
 #: .\home.html:362
 msgid "Continue Reading"
-msgstr ""
+msgstr "Weiterlesen"
 
 #: .\home.html:372
 msgid "See more ..."
-msgstr ""
+msgstr "Mehr sehen ..."

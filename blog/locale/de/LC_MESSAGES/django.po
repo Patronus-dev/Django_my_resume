@@ -9,39 +9,40 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-07-16 21:03+0330\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2024-08-09 22:24+0330\n"
+"Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.0\n"
 
 #: .\templates\blog\blog_detail.html:5 .\templates\blog\blog_detail.html:22
 #: .\templates\blog\blog_list.html:5
 msgid "Blog"
-msgstr ""
+msgstr "Blog"
 
 #: .\templates\blog\blog_detail.html:21 .\templates\blog\blog_list.html:21
 msgid "Home"
-msgstr ""
+msgstr "Startseite"
 
 #: .\templates\blog\blog_list.html:37
 msgid "Blogs"
-msgstr ""
+msgstr "Blogs"
 
 #: .\templates\blog\blog_list.html:62
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: .\templates\blog\blog_list.html:63
 msgid "Source"
-msgstr ""
+msgstr "Quelle"
 
 #: .\templates\blog\blog_list.html:64
 msgid "Date"
-msgstr ""
+msgstr "Datum"
 
 #: .\templates\blog\blog_list.html:68
 msgid "Continue Reading"
-msgstr ""
+msgstr "Weiterlesen"
