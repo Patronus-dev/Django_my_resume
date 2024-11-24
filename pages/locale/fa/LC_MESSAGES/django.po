@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-16 21:00+0330\n"
-"PO-Revision-Date: 2024-07-16 21:09+0330\n"
+"POT-Creation-Date: 2024-11-10 20:49+0330\n"
+"PO-Revision-Date: 2024-11-10 20:52+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\templates\404.html:5
+#: .\templates\404.html:5 .\templates\contact_message.html:5
 msgid "Oops!"
 msgstr "اوه !"
 
@@ -26,6 +26,17 @@ msgstr "اوه !"
 msgid "Home"
 msgstr "خانه"
 
-#: .\templates\404.html:43
+#: .\templates\404.html:43 .\templates\contact_message.html:41
 msgid "BACK TO HOME"
 msgstr "بازگشت به خانه"
+
+#: .\templates\contact_message.html:36
+msgid "Your message has been sent successfully!"
+msgstr "پیام شما با موفقیت ارسال شد!"
+
+#: .\templates\contact_message.html:37
+msgid ""
+"Thank you for sharing your opinion. We will review your message shortly."
+msgstr ""
+"با تشکر از شما برای به اشتراک گذاشتن نظرتون. به زودی پیام شما را بررسی "
+"خواهیم کرد."

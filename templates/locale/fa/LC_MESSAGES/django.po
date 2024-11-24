@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-17 00:33+0330\n"
-"PO-Revision-Date: 2024-08-09 22:21+0330\n"
+"POT-Creation-Date: 2024-11-21 22:00+0330\n"
+"PO-Revision-Date: 2024-11-21 22:00+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,19 +18,51 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\home.html:7 .\home.html:36
+#: .\404.html:5
+msgid "Page not found"
+msgstr "صفحه مورد نظر یافت نشد"
+
+#: .\404.html:21 .\home.html:7 .\home.html:36
 msgid "Home"
 msgstr "خانه"
 
+#: .\404.html:41
+msgid "Page Not Found :("
+msgstr "صفحه مورد نظر یافت نشد :("
+
+#: .\404.html:42
+msgid ""
+"We couldn't find the page you were looking for. It may have been moved or "
+"deleted, or you may have typed the URL incorrectly."
+msgstr ""
+"ما نتوانستیم صفحه مورد نظر شما را پیدا کنیم. ممکن است منتقل یا حذف شده باشد،"
+" یا ممکن است URL را اشتباه تایپ کرده باشید."
+
+#: .\404.html:45
+msgid "BACK TO HOME"
+msgstr "بازگشت به خانه"
+
+#: .\503.html:5
+msgid "Updating!"
+msgstr "بروزرسانی !"
+
+#: .\503.html:19
+msgid "We are updating :)"
+msgstr "در حال بروزرسانی هستیم :)"
+
+#: .\503.html:21
+msgid "Website will be available soon..."
+msgstr "وبسایت به زودی در دسترس خواهد بود ..."
+
 #: .\home.html:37
 msgid "About"
-msgstr "درباره من"
+msgstr "درباره"
 
 #: .\home.html:38
 msgid "Services"
 msgstr "خدمات"
 
-#: .\home.html:39 .\home.html:265
+#: .\home.html:39
 msgid "Resume"
 msgstr "رزومه"
 
@@ -38,59 +70,63 @@ msgstr "رزومه"
 msgid "Blog"
 msgstr "بلاگ"
 
-#: .\home.html:62
-msgid "I Am MEHDI"
-msgstr "مهدی هستم"
+#: .\home.html:41
+msgid "Contact"
+msgstr "ارتباط"
 
 #: .\home.html:64
+msgid "I'm MEHDI"
+msgstr "مهدی هستم"
+
+#: .\home.html:66
 msgid "WEB DEVELOPER"
 msgstr "توسعه دهنده وب"
 
-#: .\home.html:64
+#: .\home.html:66
 msgid "FREELANCER"
 msgstr "فریلنسر"
 
-#: .\home.html:64
+#: .\home.html:66
 msgid "BACKEND"
 msgstr "بک اند"
 
-#: .\home.html:69
+#: .\home.html:71 .\home.html:426
 msgid "Email"
 msgstr "ایمیل"
 
-#: .\home.html:72
+#: .\home.html:75 .\home.html:421
 msgid "Phone"
 msgstr "تماس"
 
-#: .\home.html:75
+#: .\home.html:78 .\home.html:416
 msgid "Address"
 msgstr "آدرس"
 
-#: .\home.html:75
+#: .\home.html:78
 msgid "Tehran"
 msgstr "تهران"
 
-#: .\home.html:78
+#: .\home.html:81
 msgid "Nationality"
 msgstr "ملیت"
 
-#: .\home.html:78
-msgid "Persian"
-msgstr "ایران"
+#: .\home.html:81 .\home.html:417
+msgid "Tehran, Iran"
+msgstr "تهران ، ایران"
 
-#: .\home.html:91
+#: .\home.html:94
 msgid "Profile"
 msgstr "پروفایل"
 
-#: .\home.html:104
+#: .\home.html:107
 msgid "Intro"
 msgstr "مقدمه"
 
-#: .\home.html:105
+#: .\home.html:108
 msgid "Hi, my name is Mehdi Sabz."
 msgstr "درود ، مهدی سبز هستم."
 
-#: .\home.html:108
+#: .\home.html:111
 msgid ""
 "The person who build and develops websites. I am a programmer and web "
 "developer who enjoys a wide range of hobbies, such as building web "
@@ -100,7 +136,7 @@ msgstr ""
 " لذت می‌برم، مثل ساخت برنامه‌های وب و کد نویسی . برام بیشتر مانند یک علاقه و"
 " لذت است تا اینکه یک شغل باشد ."
 
-#: .\home.html:113
+#: .\home.html:116
 msgid ""
 "I can turn Caffeine into complex programs. So either Coffee is a magic "
 "potion or I am a wizard !"
@@ -108,7 +144,7 @@ msgstr ""
 "من می‌توانم کافئین رو تبدیل به برنامه‌های پیچیده کنم. حالا یا قهوه یه معجون "
 "جادوییه ، یا من جادوگرم!"
 
-#: .\home.html:118
+#: .\home.html:121
 msgid ""
 "Django is a powerful and secure web framework for developing websites and "
 "web applications. This framework provides advanced tools and security "
@@ -121,47 +157,47 @@ msgstr ""
 "امکان می‌دهد برنامه‌های با عملکرد بالا و مقاوم در برابر حملات سایبری ایجاد "
 "کنند و تمام نیازهای توسعه وب را در یک بسته جامع برآورده می‌کند."
 
-#: .\home.html:122
+#: .\home.html:125
 msgid "Skills"
 msgstr "مهارت ها"
 
-#: .\home.html:124
+#: .\home.html:127
 msgid "Python"
 msgstr "پایتون"
 
-#: .\home.html:132
+#: .\home.html:135
 msgid "Django"
 msgstr "جنگو"
 
-#: .\home.html:140 .\home.html:174
+#: .\home.html:143 .\home.html:177
 msgid "Web Design"
 msgstr "طراحی وبسایت"
 
-#: .\home.html:148
+#: .\home.html:151
 msgid "HTML & CSS"
 msgstr ""
 
-#: .\home.html:166
+#: .\home.html:169
 msgid "What I'm Doing"
 msgstr "کاری که میکنم"
 
-#: .\home.html:167
-msgid "I am a web developer with Python and Django."
+#: .\home.html:170
+msgid "I am a web developer"
 msgstr "من یک توسعه دهنده وب هستم."
 
-#: .\home.html:175
+#: .\home.html:178
 msgid ""
 "Design responsive,user-friendly websites with modern aesthetics,also "
-"provides an intuitive user experience."
+"provides an intuitive user experience.You'll enjoy!"
 msgstr ""
-"طراحی وب‌سایت‌های واکنش‌پذیر و کاربر پسند، همچنین فراهم کردن تجربه کاربری "
-"شفاف و قابل فهم ."
+"طراحی وبسایت ریسپانسیو و کاربر پسند، همچنین فراهم کردن تجربه کاربری شفاف و "
+"قابل فهم.لذت خواهی برد!"
 
-#: .\home.html:182
+#: .\home.html:185
 msgid "Development"
 msgstr "توسعه"
 
-#: .\home.html:183
+#: .\home.html:186
 msgid ""
 "Create secure and scalable web applications using Python and "
 "Django,emphasizing high performance and reliability."
@@ -169,11 +205,11 @@ msgstr ""
 "ساخت برنامه‌های وب ، امن و قابل مقیاس با استفاده از پایتون و جنگو ، با تأکید"
 " بر عملکرد بالا و اعتماد‌پذیری."
 
-#: .\home.html:190
+#: .\home.html:193
 msgid "Social Media"
 msgstr "شبکه اجتماعی"
 
-#: .\home.html:191
+#: .\home.html:194
 msgid ""
 "In today's world, presence on social networks as well as website has a great"
 " impact on your business and introduction to customers."
@@ -181,11 +217,11 @@ msgstr ""
 "در دنیای امروز حضور در شبکه‌های اجتماعی و داشتن وبسایت تأثیر بزرگی بر "
 "کسب‌وکار دارد."
 
-#: .\home.html:198
+#: .\home.html:201
 msgid "Branding"
 msgstr "برندسازی"
 
-#: .\home.html:199
+#: .\home.html:202
 msgid ""
 "Having a website significantly increases the visibility and credibility of "
 "the business and provides a digital storefront to the audience."
@@ -193,11 +229,11 @@ msgstr ""
 "داشتن یک وب‌سایت به طور قابل توجهی دیده شدن و اعتبار کسب‌وکار را افزایش "
 "می‌دهد و برای مشتریان یک فروشگاه دیجیتالی فراهم می‌کند."
 
-#: .\home.html:206
+#: .\home.html:209
 msgid "Strategy"
 msgstr "استراتژی"
 
-#: .\home.html:207
+#: .\home.html:210
 msgid ""
 "Focus on increasing brand awareness, creating customer engagement, and "
 "achieving business goals."
@@ -205,11 +241,11 @@ msgstr ""
 "تمرکز بر افزایش آگاهی از برند، ایجاد ارتباط با مشتریان و دستیابی به اهداف "
 "کسب‌وکار ."
 
-#: .\home.html:214
+#: .\home.html:217
 msgid "Consulting"
 msgstr "مشاوره"
 
-#: .\home.html:215
+#: .\home.html:218
 msgid ""
 "Tailored solutions to enhance online presence, improve user experience,and "
 "achieve business goals effectively."
@@ -217,146 +253,188 @@ msgstr ""
 "راه‌حل‌های مخصوص برای بهبود حضور آنلاین، بهبود تجربه کاربری و دستیابی به "
 "اهداف کسب‌وکار به روشی مؤثر."
 
-#: .\home.html:232
+#: .\home.html:235
 msgid "Programming Languages"
 msgstr "زبان های برنامه نویسی"
 
-#: .\home.html:239
+#: .\home.html:242
 msgid "Successful Project"
 msgstr "پروژه های موفق"
 
-#: .\home.html:246
+#: .\home.html:249
 msgid "Certificates and Documents"
 msgstr "مدارک و گواهینامه ها"
 
-#: .\home.html:253
+#: .\home.html:256
 msgid "Workshops and Training"
 msgstr "دوره های آموزشی"
 
-#: .\home.html:270
+#: .\home.html:268
+msgid "Resume "
+msgstr "رزومه"
+
+#: .\home.html:273
 msgid "Education"
 msgstr "تحصیلات"
 
-#: .\home.html:272
+#: .\home.html:275
 msgid "Degrees"
 msgstr "مدارک"
 
-#: .\home.html:274
-msgid "Mathematics and physics Diploma."
+#: .\home.html:277
+msgid "Mathematics and physics Diploma"
 msgstr "دیپلم ریاضی و فیزیک"
 
-#: .\home.html:277
-msgid "Computer Science Diploma."
+#: .\home.html:280
+msgid "Computer Science Diploma"
 msgstr "دیپلم کامپیوتر"
 
-#: .\home.html:280
+#: .\home.html:283
 msgid "Programming Courses"
 msgstr "دوره های برنامه نویسی"
 
-#: .\home.html:282
-msgid "HTML & CSS certificate."
+#: .\home.html:286
+msgid "HTML & CSS certificate"
 msgstr "مدرک HTML & CSS"
 
-#: .\home.html:283 .\home.html:289 .\home.html:294 .\home.html:299
+#: .\home.html:286 .\home.html:292 .\home.html:297 .\home.html:302
+msgid "(Click for file view)"
+msgstr "مشاهده فایل"
+
+#: .\home.html:287 .\home.html:293 .\home.html:298 .\home.html:303
 msgid "From"
 msgstr "از"
 
-#: .\home.html:284 .\home.html:290 .\home.html:295 .\home.html:300
+#: .\home.html:288 .\home.html:294 .\home.html:299 .\home.html:304
 msgid "Cando"
 msgstr "کندو"
 
-#: .\home.html:285
+#: .\home.html:289
 msgid " Computer Science Engineering institution."
 msgstr "آموزشگاه مهندسی علوم کامپیوتر."
 
-#: .\home.html:288
-msgid "Python Foundation Master certificate."
-msgstr "مدرک پایتون مقدماتی."
+#: .\home.html:292
+msgid "Python Foundation Master certificate"
+msgstr "مدرک پایتون مقدماتی"
 
-#: .\home.html:291 .\home.html:296 .\home.html:301
+#: .\home.html:295 .\home.html:300 .\home.html:305
 msgid "Computer Science Engineering institution."
 msgstr "آموزشگاه مهندسی علوم کامپیوتر."
 
-#: .\home.html:293
-msgid "Python Advanced Master certificate."
-msgstr "مدرک پایتون پیشرفته."
+#: .\home.html:297
+msgid "Python Advanced Master certificate"
+msgstr "مدرک پایتون پیشرفته"
 
-#: .\home.html:298
-msgid "Django certificate."
-msgstr "مدرک جنگو."
+#: .\home.html:302
+msgid "Django certificate"
+msgstr "مدرک جنگو"
 
-#: .\home.html:306
+#: .\home.html:310
 msgid "About me"
 msgstr "درباره من"
 
-#: .\home.html:308
+#: .\home.html:312
 msgid "Languages"
 msgstr "زبان ها"
 
-#: .\home.html:309
-msgid "Persian "
+#: .\home.html:313
+msgid "Persian"
 msgstr "فارسی"
 
-#: .\home.html:311
-msgid "Turkish (Azerbaijan)"
-msgstr "ترکی (آذری)"
-
-#: .\home.html:314
+#: .\home.html:315
 msgid "Deutsch"
 msgstr "آلمانی"
 
-#: .\home.html:317
+#: .\home.html:318
 msgid "English"
 msgstr "انگلیسی"
 
 #: .\home.html:321
+msgid "Turkish (Azerbaijan)"
+msgstr "ترکی (آذری)"
+
+#: .\home.html:325
 msgid "Hobbies"
 msgstr "سرگرمی ها"
 
-#: .\home.html:322
+#: .\home.html:326
 msgid "Traveling"
 msgstr "مسافرت"
 
-#: .\home.html:323
+#: .\home.html:327
 msgid "Gaming"
 msgstr "گیم"
 
-#: .\home.html:324
+#: .\home.html:328
 msgid "Meeting Family & Friends"
 msgstr "خانواده و دوستان"
 
-#: .\home.html:325
+#: .\home.html:329
 msgid "Music"
 msgstr "موزیک"
 
-#: .\home.html:326
+#: .\home.html:330
 msgid "Pets"
 msgstr "حیوانات خونگیم"
 
-#: .\home.html:329
-msgid "Other Skills"
-msgstr "مهارت های دیگر"
+#: .\home.html:333
+msgid "Professional Experience"
+msgstr "تجربه کاری"
 
-#: .\home.html:330
+#: .\home.html:334
 msgid "2019 to Present"
 msgstr "از سال 2019 تا کنون"
 
-#: .\home.html:331
-msgid "Accountant"
-msgstr "حسابداری"
+#: .\home.html:335
+msgid "Accountant and IT manager"
+msgstr "حسابدار و پشتیبانی آی تی"
 
-#: .\home.html:332
-msgid "Working as an accountant in a private company."
-msgstr "شاغل به عنوان حسابدار در یک شرکت خصوصی"
+#: .\home.html:336
+msgid ""
+"Experience in accounting and also as IT manager at Amer Engineering company."
+msgstr ""
+"سابقه کار در زمینه حسابداری و همچنین به عنوان مسئول آی تی در شرکت مهندسی "
+"عامر."
 
-#: .\home.html:346
+#: .\home.html:350
 msgid "Latest blogs"
 msgstr "تازه ترین های بلاگ"
 
-#: .\home.html:362
+#: .\home.html:365
 msgid "Continue Reading"
 msgstr "ادامه مطلب"
 
-#: .\home.html:372
+#: .\home.html:375
 msgid "See more ..."
 msgstr "مشاهده بیشتر ..."
+
+#: .\home.html:392
+msgid "Write Your Message"
+msgstr "پیام خود را بگذارید"
+
+#: .\home.html:393
+msgid ""
+"I would like to receive your comments, suggestions or questions; Please "
+"enter your message."
+msgstr ""
+"مایلم نظرات، پیشنهادات یا سوالات شما را دریافت کنم. لطفا پیام خود را وارد "
+"کنید."
+
+#: .\home.html:404
+msgid "Send Message"
+msgstr "ارسال پیام"
+
+#~ msgid "Iran"
+#~ msgstr "ایران"
+
+#~ msgid "Persian "
+#~ msgstr "فارسی"
+
+#~ msgid "Other Skills"
+#~ msgstr "مهارت های دیگر"
+
+#~ msgid "Accountant"
+#~ msgstr "حسابداری"
+
+#~ msgid "Working as an accountant in a private company."
+#~ msgstr "شاغل به عنوان حسابدار در یک شرکت خصوصی"

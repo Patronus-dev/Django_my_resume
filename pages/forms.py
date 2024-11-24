@@ -7,7 +7,7 @@ from .models import ContactMessage
 class ContactMessageForm(forms.ModelForm):
     class Meta:
         model = ContactMessage
-        fields = ['name', 'subject', 'email', 'message']
+        fields = ['name', 'email', 'message']
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)

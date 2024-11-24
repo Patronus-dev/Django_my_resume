@@ -27,21 +27,22 @@ Version      : 1.0
 */
 body {
     color: #bdbec1;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tahoma', sans-serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 26px;
     background: #191A1C;
     overflow-x: hidden;
     background-size: cover;
+    direction: ltr;
+    text-align: left;
 }
-
 
 html,
-body {
-    height: 100%;
-    position: relative;
-}
+/*body {*/
+/*    height: 100%;*/
+/*    position: relative;*/
+/*}*/
 
 h1,
 h2,
@@ -51,7 +52,7 @@ h5,
 h6 {
     letter-spacing: 0px;
     margin-top: 0px;
-    font-family: 'Jost', sans-serif;
+    font-family: 'Tahoma', sans-serif; /* تغییر فونت به یک فونت مناسب فارسی */
     color: #fff;
     font-weight: 400;
 }
@@ -1371,10 +1372,12 @@ b, strong {
 * 11.START CONTACT DESIGN
 * ----------------------------------------------------------------------------------------
 */
+/* استایل کلی برای بخش فرم */
 .contact {
     margin-right: 30px;
 }
 
+/* برای دستگاه‌های کوچک‌تر */
 @media only screen and (max-width: 768px) {
     .contact {
         margin-bottom: 60px;
@@ -1382,31 +1385,19 @@ b, strong {
     }
 }
 
+/* استایل برای عنوان */
 .contact h4 {
     font-weight: 700;
     font-size: 40px;
 }
 
+/* استایل برای توضیحات */
 .contact p {
     margin-bottom: 40px;
 }
 
-.contact input {
-    background: none;
-    border: 1px solid #353638;
-    border-radius: 0px;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #fff;
-    font-size: 16px;
-    font-weight: 400;
-    height: 70px;
-    padding: 10px 10px 10px 30px;
-    width: 100%;
-    margin-bottom: 30px;
-    /* border: 1px solid #e9e6e6; */
-}
-
+/* برای تنظیم فیلدهای ورودی و textarea */
+.contact input,
 .contact textarea {
     background: none;
     border: 1px solid #353638;
@@ -1417,32 +1408,51 @@ b, strong {
     font-size: 16px;
     font-weight: 400;
     padding: 10px 10px 10px 30px;
-    width: 100%;
     margin-bottom: 30px;
 }
 
-.contact input:focus {
+/* تنظیمات برای ورودی‌ها */
+.contact input {
+    height: 70px;
+    width: 100%; /* عرض 100% در حالت پیش‌فرض */
+}
+
+/* تنظیمات برای textarea */
+.contact textarea {
+    width: 100%;
+    height: 150px;
+}
+
+/* تنظیمات focus برای ورودی‌ها */
+.contact input:focus,
+.contact textarea:focus {
     border: 1px solid #f0bb62;
-    -webkit-box-shadow: none;
     box-shadow: none;
     outline: 0 none;
     color: #fff;
     background: none;
 }
 
-.contact textarea:focus {
-    border: 1px solid #f0bb62;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    color: #fff;
-    background: none;
-}
-
+/* دکمه ارسال */
 .contact button {
     width: 100%;
     font-size: 16px;
 }
 
+/* استفاده از Flexbox برای قرار دادن فیلدهای کنار هم */
+.form-row {
+    display: flex;
+    gap: 20px; /* فاصله بین فیلدها */
+    margin-bottom: 30px;
+    flex-wrap: wrap; /* اجازه می‌دهد که فیلدها در موبایل کنار هم قرار گیرند */
+}
+
+/* فیلدهای ورودی (نام و ایمیل) که باید کنار هم باشند */
+.form-row .form-group {
+    width: 45%; /* عرض 45% برای فیلدهای کنار هم */
+}
+
+/* استایل برای فیلدهای آدرس */
 .address_bg {
     background: none;
     border: 1px solid #353638;
@@ -1462,12 +1472,18 @@ b, strong {
     padding-bottom: 0px;
 }
 
+/* استایل برای نمایش بهینه در موبایل */
 @media only screen and (max-width: 768px) {
+    .form-row .form-group {
+        width: 100%; /* عرض 100% برای فیلدها در موبایل */
+    }
+
     .single_address {
         margin-bottom: 70px;
     }
 }
 
+/* استایل برای آیکن‌ها و نمایش آدرس‌ها */
 .address_br {
     float: left;
 }
@@ -1484,20 +1500,18 @@ b, strong {
     font-weight: 600;
     font-size: 18px;
     overflow: hidden;
-
 }
 
 .single_address p {
     overflow: hidden;
 }
 
+/* استایل دکمه ارسال */
 .contact_btn {
     background: #222427;
     padding: 10px;
     color: #fff;
     text-transform: capitalize;
-    -webkit-transition: 0.3s;
-    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -1506,15 +1520,14 @@ b, strong {
     color: #fff;
 }
 
-
-.map {
-}
-
+/* استایل نقشه */
 .map iframe {
     width: 100%;
     height: 400px;
     margin-bottom: -8px;
 }
+
+
 
 /*
 * ----------------------------------------------------------------------------------------

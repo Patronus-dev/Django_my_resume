@@ -2,7 +2,7 @@
 {% load static %}
 {% load i18n %}
 
-{% block page_title %}{% trans 'Oops!' %}{% endblock page_title %}
+{% block page_title %}{% trans 'Page not found' %}{% endblock page_title %}
 
 {% block navbar %}
 
@@ -33,13 +33,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 offset-lg-1 col-sm-12 col-xs-12">
-                    <div class="single_blog_page" style="width: fit-content ; margin: 0 auto">
-                        <img style="margin: 0 auto" src="{% static 'img/404/404-page-removebg-preview.png' %}"
+                    <div class="single_blog_page" style="width: fit-content ; margin: 0 auto; height: auto">
+                        <img style="margin: 0 auto" src="{% static 'img/pages/404-page-removebg-preview.png' %}"
                              class="img-fluid" alt="image"/>
                     </div>
                     <div class="col-md-12 text-center">
+                        <h4>{% trans "Page Not Found :(" %}</h4>
+                        <h4>{% trans "We couldn't find the page you were looking for. It may have been moved or deleted, or you may have typed the URL incorrectly." %}</h4>
                         <a href="{% url 'home' %}">
-                            <button type="submit" name="submit" id="submitButton"
+                            <button type="submit" name="submit" id="submitButton" style="margin-top: 5%"
                                     class="btn btn-lg contact_btn">{% trans 'BACK TO HOME' %}
                             </button>
                         </a>
