@@ -27,19 +27,20 @@
                        class="lang-btn {% if request.LANGUAGE_CODE == 'en' %}active{% endif %}">English</a> |
                     <a href="{% url 'set_language' %}?language=de"
                        class="lang-btn {% if request.LANGUAGE_CODE == 'de' %}active{% endif %}">Deutsch</a>
-{#                    <a href="{% url 'set_language' %}?language=fa"#}
-{#                       class="lang-btn {% if request.LANGUAGE_CODE == 'fa' %}active{% endif %}">فارسی</a>#}
+                    {#                    <a href="{% url 'set_language' %}?language=fa"#}
+                    {#                       class="lang-btn {% if request.LANGUAGE_CODE == 'fa' %}active{% endif %}">فارسی</a>#}
                 </div>
                 <!--END LANGUAGES SWITCHER-->
-
                 <ul id="navbar-navlist" class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="{% url 'home' %}">{% trans 'Home' %}</a></li>
+                    <li class="nav-item"><a class="nav-link {% if request.path == '/' %}active{% endif %}"
+                                            href="{% url 'home' %}">{% trans 'Home' %}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#about">{% trans 'About' %}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#service">{% trans 'Services' %}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#resume">{% trans 'Resume' %}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#blog">{% trans 'Blog' %}</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">{% trans 'Contact' %}</a></li>
                 </ul>
+
                 <!--END NAVBAR NAV-->
             </div>
             <!--END COLLAPSE-->
@@ -54,7 +55,7 @@
 
     <!-- START HOME -->
     <section data-stellar-background-ratio="0.3" id="home" class="home_bg"
-             style="background-image: url({% static 'img/home/home-wallpaper.jpg' %});  background-size:cover;
+             style="background-image: url({% static 'img/home/home-wallpaper fit.png' %});  background-size:cover;
                      background-position: center center; background-attachment: fixed; background-repeat: no-repeat; margin-top: 0">
         <div id="particles-js"></div>
         <div class="container">
@@ -283,23 +284,28 @@
                         <h4 class="timeline_title">{% trans 'Programming Courses' %}</h4>
                         <br>
                         <span class="active_year">2021</span>
-                        <span class="active_company">- {% trans 'HTML & CSS certificate' %}</span> | <a style="color: inherit" href="{% static 'files/Cando - HTML & CSS.pdf' %}" target="_blank"><small>{% trans '(Click for file view)' %}</small></a>
+                        <span class="active_company">- {% trans 'HTML & CSS certificate' %}</span> | <a
+                            style="color: inherit" href="{% static 'files/Cando - HTML & CSS.pdf' %}"
+                            target="_blank"><small>{% trans '(Click for file view)' %}</small></a>
                         <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans ' Computer Science Engineering institution.' %}
                         </p><br>
                         <span class="active_year">2022</span>
-                        <span class="active_company">- {% trans 'Python Foundation Master certificate' %}</span> | <small>{% trans '(Click for file view)' %}</small>
+                        <span class="active_company">- {% trans 'Python Foundation Master certificate' %}</span> |
+                        <small>{% trans '(Click for file view)' %}</small>
                         <p>{% trans 'From' %}<a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                         <span class="active_year">2022</span>
-                        <span class="active_company">- {% trans 'Python Advanced Master certificate' %}</span> | <small>{% trans '(Click for file view)' %}</small>
+                        <span class="active_company">- {% trans 'Python Advanced Master certificate' %}</span> |
+                        <small>{% trans '(Click for file view)' %}</small>
                         <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                         <span class="active_year">2023</span>
-                        <span class="active_company">- {% trans 'Django certificate' %}</span> | <small>{% trans '(Click for file view)' %}</small>
+                        <span class="active_company">- {% trans 'Django certificate' %}</span> |
+                        <small>{% trans '(Click for file view)' %}</small>
                         <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
@@ -310,30 +316,32 @@
                     <h4 class="timeline_title">{% trans 'About me' %}</h4>
                     <div class="single_timeline">
                         <h4>{% trans 'Languages' %}</h4>
+                        <img class="flag-icons" src="{% static 'img/icons/iran.png' %}" alt="">
                         <span class="active_company">{% trans 'Persian' %}</span><br>
                         <img class="flag-icons" src="{% static 'img/icons/Germany.png' %}" alt="">
                         <span class="active_company">{% trans 'Deutsch' %} (B2)</span>
                         <br>
                         <img class="flag-icons" src="{% static 'img/icons/English.png' %}" alt="">
-                        <span class="active_company">{% trans 'English' %} (Intermediate)</span>
+                        <span class="active_company">{% trans 'English' %} (B1-B2)</span>
                         <br>
                         <img class="flag-icons" src="{% static 'img/icons/Azerbaijan.png' %}" alt="">
                         <span class="active_company">{% trans 'Turkish (Azerbaijan)' %}</span>
                         <br>
                     </div>
-                    <div class="single_timeline">
-                        <h4>{% trans 'Hobbies' %}</h4>
-                        <span class="active_company">- {% trans 'Traveling' %}</span><br>
-                        <span class="active_company">- {% trans 'Gaming' %}</span><br>
-                        <span class="active_company">- {% trans 'Meeting Family & Friends' %}</span><br>
-                        <span class="active_company">- {% trans 'Music' %}</span><br>
-                        <span class="active_company">- {% trans 'Pets' %}</span><br>
-                    </div>
+                    {#                    <div class="single_timeline">#}
+                    {#                        <h4>{% trans 'Hobbies' %}</h4>#}
+                    {#                        <span class="active_company">- {% trans 'Traveling' %}</span><br>#}
+                    {#                        <span class="active_company">- {% trans 'Gaming' %}</span><br>#}
+                    {#                        <span class="active_company">- {% trans 'Meeting Family & Friends' %}</span><br>#}
+                    {#                        <span class="active_company">- {% trans 'Music' %}</span><br>#}
+                    {#                        <span class="active_company">- {% trans 'Pets' %}</span><br>#}
+                    {#                    </div>#}
+                    <br>
                     <div class="single_timeline single_timeline_mbnone">
                         <h4 class="timeline_title">{% trans "Professional Experience" %}</h4>
                         <span class="active_year">{% trans "2019 to Present" %}</span>
-                        <span class="active_company">- {% trans "Accountant and IT manager" %}</span>
-                        <p>{% trans "Experience in accounting and also as IT manager at Amer Engineering company." %}</p>
+                        <span class="active_company">- {% trans "Accountant and IT Support" %}</span>
+                        <p>{% trans "Experience in accounting and also as IT Supporter at Amer Engineering company." %}</p>
                     </div>
 
                 </div><!--END COL -->
@@ -424,7 +432,8 @@
                         <div class="single_address">
                             <div class="address_br"><span class="ti-email"></span></div>
                             <h4>{% trans 'Email' %}</h4>
-                            <p><a style="color: inherit" target="_blank" href="mailto:mehdii.dev@gmail.com">mehdii.dev@gmail.com</a></p>
+                            <p><a style="color: inherit" target="_blank" href="mailto:mehdii.dev@gmail.com">mehdii.dev@gmail.com</a>
+                            </p>
                         </div>
                     </div>
                 </div><!-- END COL  -->
@@ -452,7 +461,48 @@
                 });
             });
         });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            // گرفتن تمام لینک‌های ناوبری
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-item a');
+
+            // تابعی برای حذف کلاس active از همه لینک‌ها
+            function removeActiveClass() {
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+            }
+
+            // برای هر لینک چک کردن اینکه آیا در بخش مشخصی از صفحه هستیم
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    removeActiveClass(); // حذف کلاس active از همه لینک‌ها
+                    this.classList.add('active'); // اضافه کردن کلاس active به لینک کلیک شده
+                });
+            });
+
+            // بررسی موقعیت فعلی صفحه و اضافه کردن کلاس active به لینک‌های مربوطه
+            const sections = ['#about', '#service', '#resume', '#blog', '#contact'];
+            sections.forEach(section => {
+                const sectionElement = document.querySelector(section);
+                if (sectionElement) {
+                    const observer = new IntersectionObserver(entries => {
+                        entries.forEach(entry => {
+                            const link = document.querySelector(`a[href="${section}"]`);
+                            if (entry.isIntersecting) {
+                                removeActiveClass();
+                                link.classList.add('active');
+                            }
+                        });
+                    }, {threshold: 0.5});
+                    observer.observe(sectionElement);
+                }
+            });
+        });
+
     </script>
+
+
     <!-- end js -->
 
 

@@ -269,6 +269,8 @@ b, strong {
     color: #fff;
 }
 
+
+
 /*END SOCIAL PROFILE CSS*/
 /*
 * ----------------------------------------------------------------------------------------
@@ -345,7 +347,7 @@ b, strong {
 .navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-nav li a:active,
 .navbar-custom .navbar-nav li a.active {
-    color: #fff !important;
+    color: #f0bb62 !important;
 }
 
 .navbar-custom .navbar-nav .nav-item:last-child .nav-link {

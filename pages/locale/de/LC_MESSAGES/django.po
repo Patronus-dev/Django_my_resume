@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-10 20:49+0330\n"
-"PO-Revision-Date: 2024-11-10 20:51+0330\n"
+"POT-Creation-Date: 2024-11-24 18:06+0330\n"
+"PO-Revision-Date: 2024-11-24 18:06+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,17 +18,28 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
-#: .\templates\404.html:5 .\templates\contact_message.html:5
+#: .\models.py:7
+#| msgid "name"
+msgid "Name"
+msgstr "Name"
+
+#: .\models.py:8
+#| msgid "email"
+msgid "Email"
+msgstr "E-Mail"
+
+#: .\models.py:9
+msgid "Subject"
+msgstr "Thema"
+
+#: .\models.py:10
+#| msgid "message"
+msgid "Message"
+msgstr "Nachricht"
+
+#: .\templates\contact_message.html:5
 msgid "Oops!"
 msgstr "Hoppla!"
-
-#: .\templates\404.html:21
-msgid "Home"
-msgstr "Startseite"
-
-#: .\templates\404.html:43 .\templates\contact_message.html:41
-msgid "BACK TO HOME"
-msgstr "ZURÜCK ZUR STARTSEITE"
 
 #: .\templates\contact_message.html:36
 msgid "Your message has been sent successfully!"
@@ -39,3 +50,10 @@ msgid ""
 "Thank you for sharing your opinion. We will review your message shortly."
 msgstr ""
 "Vielen Dank für Ihre Meinung. Wir werden Ihre Nachricht in Kürze prüfen."
+
+#: .\templates\contact_message.html:41
+msgid "BACK TO HOME"
+msgstr "ZURÜCK ZUR STARTSEITE"
+
+#~ msgid "Home"
+#~ msgstr "Startseite"

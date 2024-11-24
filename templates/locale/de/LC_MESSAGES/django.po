@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 22:00+0330\n"
-"PO-Revision-Date: 2024-11-21 22:01+0330\n"
+"POT-Creation-Date: 2024-11-24 18:19+0330\n"
+"PO-Revision-Date: 2024-11-24 19:37+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,15 +90,15 @@ msgstr "SELBSTSTÄNDIGER"
 msgid "BACKEND"
 msgstr "BACK-END ENTWICKLER"
 
-#: .\home.html:71 .\home.html:426
+#: .\home.html:71 .\home.html:427
 msgid "Email"
 msgstr "E-Mail"
 
-#: .\home.html:75 .\home.html:421
+#: .\home.html:75 .\home.html:422
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\home.html:78 .\home.html:416
+#: .\home.html:78 .\home.html:417
 msgid "Address"
 msgstr "Adresse"
 
@@ -110,7 +110,7 @@ msgstr "Tehran"
 msgid "Nationality"
 msgstr "Heimatland"
 
-#: .\home.html:81 .\home.html:417
+#: .\home.html:81 .\home.html:418
 msgid "Tehran, Iran"
 msgstr "Tehran, Iran"
 
@@ -287,11 +287,11 @@ msgstr "Abschlüsse"
 
 #: .\home.html:277
 msgid "Mathematics and physics Diploma"
-msgstr "Diplom in Mathematik und Physik"
+msgstr "Abitur in Mathematik und Physik"
 
 #: .\home.html:280
 msgid "Computer Science Diploma"
-msgstr "Diplom in Informatik"
+msgstr "Abitur in Informatik"
 
 #: .\home.html:283
 msgid "Programming Courses"
@@ -319,7 +319,7 @@ msgstr "Computer Science Engineering Institution."
 
 #: .\home.html:292
 msgid "Python Foundation Master certificate"
-msgstr "Python Foundation Master-Zertifikat"
+msgstr "Python Foundation Master Zertifikat"
 
 #: .\home.html:295 .\home.html:300 .\home.html:305
 msgid "Computer Science Engineering institution."
@@ -327,11 +327,11 @@ msgstr "Computer Science Engineering Institution."
 
 #: .\home.html:297
 msgid "Python Advanced Master certificate"
-msgstr "Python Advanced Master-Zertifikat"
+msgstr "Python Advanced Master Zertifikat"
 
 #: .\home.html:302
 msgid "Django certificate"
-msgstr "Django-Zertifikat"
+msgstr "Django Zertifikat"
 
 #: .\home.html:310
 msgid "About me"
@@ -357,66 +357,46 @@ msgstr "Englisch"
 msgid "Turkish (Azerbaijan)"
 msgstr "Türkisch (Aserbaidschan)"
 
-#: .\home.html:325
-msgid "Hobbies"
-msgstr "Hobbys"
-
-#: .\home.html:326
-msgid "Traveling"
-msgstr "Reisen"
-
-#: .\home.html:327
-msgid "Gaming"
-msgstr "Videospiele"
-
-#: .\home.html:328
-msgid "Meeting Family & Friends"
-msgstr "Familie & Freunde treffen"
-
-#: .\home.html:329
-msgid "Music"
-msgstr "Musik"
-
-#: .\home.html:330
-msgid "Pets"
-msgstr "Haustiere"
-
-#: .\home.html:333
+#: .\home.html:334
 msgid "Professional Experience"
 msgstr "Berufserfahrung"
 
-#: .\home.html:334
+#: .\home.html:335
 msgid "2019 to Present"
 msgstr "2019 bis heute"
 
-#: .\home.html:335
-msgid "Accountant and IT manager"
+#: .\home.html:336
+#| msgid "Accountant and IT manager"
+msgid "Accountant and IT Support"
 msgstr "Buchhaltung und IT-Verantwortlicher"
 
-#: .\home.html:336
+#: .\home.html:337
+#| msgid ""
+#| "Experience in accounting and also as IT manager at Amer Engineering company."
 msgid ""
-"Experience in accounting and also as IT manager at Amer Engineering company."
+"Experience in accounting and also as IT Supporter at Amer Engineering "
+"company."
 msgstr ""
 "Erfahrung in der Buchhaltung und auch als IT-Verantwortlicher bei der Amer "
 "Engineering Firma"
 
-#: .\home.html:350
+#: .\home.html:351
 msgid "Latest blogs"
 msgstr "Die neusten Blogs"
 
-#: .\home.html:365
+#: .\home.html:366
 msgid "Continue Reading"
 msgstr "Weiterlesen"
 
-#: .\home.html:375
+#: .\home.html:376
 msgid "See more ..."
 msgstr "Mehr sehen ..."
 
-#: .\home.html:392
+#: .\home.html:393
 msgid "Write Your Message"
 msgstr "Schreiben Sie Ihre Nachricht"
 
-#: .\home.html:393
+#: .\home.html:394
 msgid ""
 "I would like to receive your comments, suggestions or questions; Please "
 "enter your message."
@@ -424,9 +404,27 @@ msgstr ""
 "Ich würde gerne Ihre Kommentare, Vorschläge oder Fragen erhalten. Bitte "
 "geben Sie Ihre Nachricht ein."
 
-#: .\home.html:404
+#: .\home.html:405
 msgid "Send Message"
 msgstr "Nachricht senden"
+
+#~ msgid "Hobbies"
+#~ msgstr "Hobbys"
+
+#~ msgid "Traveling"
+#~ msgstr "Reisen"
+
+#~ msgid "Gaming"
+#~ msgstr "Videospiele"
+
+#~ msgid "Meeting Family & Friends"
+#~ msgstr "Familie & Freunde treffen"
+
+#~ msgid "Music"
+#~ msgstr "Musik"
+
+#~ msgid "Pets"
+#~ msgstr "Haustiere"
 
 #~ msgid "Iran"
 #~ msgstr "Iran"

@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-21 22:00+0330\n"
-"PO-Revision-Date: 2024-11-21 22:00+0330\n"
+"POT-Creation-Date: 2024-11-24 18:19+0330\n"
+"PO-Revision-Date: 2024-11-24 18:21+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,15 +90,15 @@ msgstr "فریلنسر"
 msgid "BACKEND"
 msgstr "بک اند"
 
-#: .\home.html:71 .\home.html:426
+#: .\home.html:71 .\home.html:427
 msgid "Email"
 msgstr "ایمیل"
 
-#: .\home.html:75 .\home.html:421
+#: .\home.html:75 .\home.html:422
 msgid "Phone"
 msgstr "تماس"
 
-#: .\home.html:78 .\home.html:416
+#: .\home.html:78 .\home.html:417
 msgid "Address"
 msgstr "آدرس"
 
@@ -110,7 +110,7 @@ msgstr "تهران"
 msgid "Nationality"
 msgstr "ملیت"
 
-#: .\home.html:81 .\home.html:417
+#: .\home.html:81 .\home.html:418
 msgid "Tehran, Iran"
 msgstr "تهران ، ایران"
 
@@ -353,66 +353,46 @@ msgstr "انگلیسی"
 msgid "Turkish (Azerbaijan)"
 msgstr "ترکی (آذری)"
 
-#: .\home.html:325
-msgid "Hobbies"
-msgstr "سرگرمی ها"
-
-#: .\home.html:326
-msgid "Traveling"
-msgstr "مسافرت"
-
-#: .\home.html:327
-msgid "Gaming"
-msgstr "گیم"
-
-#: .\home.html:328
-msgid "Meeting Family & Friends"
-msgstr "خانواده و دوستان"
-
-#: .\home.html:329
-msgid "Music"
-msgstr "موزیک"
-
-#: .\home.html:330
-msgid "Pets"
-msgstr "حیوانات خونگیم"
-
-#: .\home.html:333
+#: .\home.html:334
 msgid "Professional Experience"
 msgstr "تجربه کاری"
 
-#: .\home.html:334
+#: .\home.html:335
 msgid "2019 to Present"
 msgstr "از سال 2019 تا کنون"
 
-#: .\home.html:335
-msgid "Accountant and IT manager"
+#: .\home.html:336
+#| msgid "Accountant and IT manager"
+msgid "Accountant and IT Support"
 msgstr "حسابدار و پشتیبانی آی تی"
 
-#: .\home.html:336
+#: .\home.html:337
+#| msgid ""
+#| "Experience in accounting and also as IT manager at Amer Engineering company."
 msgid ""
-"Experience in accounting and also as IT manager at Amer Engineering company."
+"Experience in accounting and also as IT Supporter at Amer Engineering "
+"company."
 msgstr ""
 "سابقه کار در زمینه حسابداری و همچنین به عنوان مسئول آی تی در شرکت مهندسی "
 "عامر."
 
-#: .\home.html:350
+#: .\home.html:351
 msgid "Latest blogs"
 msgstr "تازه ترین های بلاگ"
 
-#: .\home.html:365
+#: .\home.html:366
 msgid "Continue Reading"
 msgstr "ادامه مطلب"
 
-#: .\home.html:375
+#: .\home.html:376
 msgid "See more ..."
 msgstr "مشاهده بیشتر ..."
 
-#: .\home.html:392
+#: .\home.html:393
 msgid "Write Your Message"
 msgstr "پیام خود را بگذارید"
 
-#: .\home.html:393
+#: .\home.html:394
 msgid ""
 "I would like to receive your comments, suggestions or questions; Please "
 "enter your message."
@@ -420,9 +400,27 @@ msgstr ""
 "مایلم نظرات، پیشنهادات یا سوالات شما را دریافت کنم. لطفا پیام خود را وارد "
 "کنید."
 
-#: .\home.html:404
+#: .\home.html:405
 msgid "Send Message"
 msgstr "ارسال پیام"
+
+#~ msgid "Hobbies"
+#~ msgstr "سرگرمی ها"
+
+#~ msgid "Traveling"
+#~ msgstr "مسافرت"
+
+#~ msgid "Gaming"
+#~ msgstr "گیم"
+
+#~ msgid "Meeting Family & Friends"
+#~ msgstr "خانواده و دوستان"
+
+#~ msgid "Music"
+#~ msgstr "موزیک"
+
+#~ msgid "Pets"
+#~ msgstr "حیوانات خونگیم"
 
 #~ msgid "Iran"
 #~ msgstr "ایران"
