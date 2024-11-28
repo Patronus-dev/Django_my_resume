@@ -20,6 +20,7 @@ DEBUG = env.bool("DJANGO_DEBUG")
 
 ALLOWED_HOSTS = ['*']
 
+SITE_ID = 1
 
 # Application definition
 
@@ -30,7 +31,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'maintenance_mode',
 
     # third party
     'rosetta',
@@ -38,6 +38,12 @@ INSTALLED_APPS = [
     'crispy_bootstrap5',
     'ckeditor',
     'ckeditor_uploader',
+    'maintenance_mode',
+    'django_check_seo',
+    'django.contrib.sites',
+    'cms',
+    'menus',
+    'treebeard',
 
     # my apps
     'pages',
@@ -123,7 +129,7 @@ LOCALE_PATHS = (
 )
 
 LANGUAGES = (
-    ('en', 'English'),
+    ('en-us', 'English'),
     ('de', 'Deutsch'),
     ('fa', 'Persian'),
 )

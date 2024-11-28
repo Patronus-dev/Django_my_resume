@@ -12,6 +12,7 @@ class Blog(models.Model):
     title = models.CharField(verbose_name='Title', max_length=100, blank=False)
     author = models.CharField(verbose_name='Author', max_length=50, blank=False)
     source = models.CharField(verbose_name='Source', max_length=100, blank=False)
+    source_link = models.URLField(max_length=200, blank=True, null=True)
     text = RichTextField()
     datetime_created = models.DateTimeField(verbose_name='date created', auto_now_add=True)
     datetime_modified = models.DateTimeField(verbose_name='date edited', auto_now=True)
