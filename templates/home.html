@@ -12,7 +12,8 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img style="width: 25%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}" alt="Patronus Logo"></a>
+                <img style="width: 25%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}"
+                     alt="Patronus Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="mdi mdi-menu"></span>
@@ -118,9 +119,15 @@
                                 😉
                             </strong>
                         </p>
-                        <p>
-                            {% trans 'Django is a powerful and secure web framework for developing websites and web applications. This framework provides advanced tools and security features, enabling developers to create high-performance applications resistant to cyber attacks. With its "batteries included"  philosophy, Django meets all web development needs in a comprehensive package.' %}
-                        </p>
+
+                        <div style="width: fit-content; margin: 0 auto;">
+                            <h4>
+                                <strong>
+                                    {% trans 'My Motto : Dream, Plan, Do !' %}
+                                </strong>
+                            </h4>
+                        </div>
+
                     </div>
                     <div class="skills_info">
                         <h4>{% trans 'Skills' %}</h4>
@@ -444,6 +451,7 @@
 
     <!-- start js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
     <script>
         $(document).ready(function () {
             $('.lang-btn').click(function (event) {
@@ -499,6 +507,7 @@
                 }
             });
         });
+
 
     </script>
 

@@ -39,10 +39,10 @@ body {
 }
 
 html,
-/*body {*/
-/*    height: 100%;*/
-/*    position: relative;*/
-/*}*/
+    /*body {*/
+    /*    height: 100%;*/
+    /*    position: relative;*/
+    /*}*/
 
 h1,
 h2,
@@ -268,7 +268,6 @@ b, strong {
 .social_profile ul li a:hover {
     color: #fff;
 }
-
 
 
 /*END SOCIAL PROFILE CSS*/
@@ -498,11 +497,10 @@ b, strong {
 * 04. START ABOUT CSS STYLE
 * ----------------------------------------------------------------------------------------
 */
-.about_img {
-}
 
 .about_img img {
-    width: 100%;
+    width: 90%;
+    float: right;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1530,7 +1528,6 @@ b, strong {
 }
 
 
-
 /*
 * ----------------------------------------------------------------------------------------
 * 11.END CONTACT DESIGN
@@ -1633,6 +1630,28 @@ b, strong {
 .section-top-title h1 {
     color: #fff;
     font-weight: 600;
+}
+
+
+.responsive-style {
+    width: 20%; /* اندازه پیش‌فرض برای دستگاه‌های بزرگ */
+    margin: 0 auto;
+}
+
+/* استایل برای تبلت‌ها */
+@media (max-width: 768px) {
+    .responsive-style {
+        width: 50%; /* عرض بیشتر برای دستگاه‌های کوچک‌تر */
+        margin: 0 auto;
+    }
+}
+
+/* استایل برای موبایل‌ها */
+@media (max-width: 480px) {
+    .responsive-style {
+        width: 50%; /* عرض کامل برای موبایل */
+        margin: 0 auto;
+    }
 }
 
 /*
