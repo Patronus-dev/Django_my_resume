@@ -1237,6 +1237,7 @@ b, strong {
 @media only screen and (max-width: 880px) {
     .single_blog {
         margin-bottom: 30px;
+        height: 500px;
     }
 }
 

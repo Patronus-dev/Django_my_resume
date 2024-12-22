@@ -1,0 +1,1611 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 275, in ensure_connection
+    self.connect()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 277, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "db" to address: Name or service not known
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 275, in ensure_connection
+    self.connect()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 277, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: could not translate host name "db" to address: Name or service not known
+
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2395435] Child process with pid: 2395438 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2397260] Child process with pid: 2397263 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2397260] Child process with pid: 2406562 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2407092] Child process with pid: 2407096 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2409959] Child process with pid: 2409963 was killed by signal: 15, core dumped: no
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/home/patronus/Django_My_resume/passenger_wsgi.py", line 1, in <module>
+    from config.wsgi import application
+  File "/home/patronus/Django_My_resume/config/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+                  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/__init__.py", line 19, in setup
+    configure_logging(settings.LOGGING_CONFIG, settings.LOGGING)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 89, in __getattr__
+    self._setup(name)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 76, in _setup
+    self._wrapped = Settings(settings_module)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/conf/__init__.py", line 190, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/alt/python311/lib64/python3.11/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/config/settings.py", line 86
+    https://docs.djangoproject.com/en/4.0/ref/settings/#databases
+          ^^
+SyntaxError: invalid syntax
+[UID:1114][2445410] Child process with pid: 2445414 was killed by signal: 15, core dumped: no
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Not Found: /favicon.ico
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Not Found: /favicon.ico
+Not Found: /wordpress
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 275, in ensure_connection
+    self.connect()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 277, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "patronus_userdatabase"
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1560, in execute_sql
+    cursor = self.connection.cursor()
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 316, in cursor
+    return self._cursor()
+           ^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 292, in _cursor
+    self.ensure_connection()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 274, in ensure_connection
+    with self.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 275, in ensure_connection
+    self.connect()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/base/base.py", line 256, in connect
+    self.connection = self.get_new_connection(conn_params)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/utils/asyncio.py", line 26, in inner
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/postgresql/base.py", line 277, in get_new_connection
+    connection = self.Database.connect(**conn_params)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib64/python3.11/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "patronus_userdatabase"
+
+Not Found: /wp
+Not Found: /bc
+Not Found: /bk
+Not Found: /backup
+Not Found: /old
+Not Found: /new
+Not Found: /main
+Not Found: /home
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedTable: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/views/generic/base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 24, in get
+    context = self.get_context_data(**kwargs)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/pages/views.py", line 19, in get_context_data
+    latest_blogs = Blog.objects.all().order_by('-id')[:3][::-1]
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 447, in __getitem__
+    return list(qs)[:: k.step] if k.step else qs
+           ^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 400, in __iter__
+    self._fetch_all()
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: relation "blog_blog" does not exist
+LINE 1: ...", "blog_blog"."image", "blog_blog"."status" FROM "blog_blog...
+                                                             ^
+
+Internal Server Error: /set-language/
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'None' not found. 'None' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/language/views.py", line 8, in set_language
+    return redirect(request.META.get('HTTP_REFERER'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 186, in resolve_url
+    if "/" not in to and "." not in to:
+       ^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+Not Found: /assets/bootstrap/css/bootstrap.min.css
+Not Found: /assets/css/venobox.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/css/magic-mouse.css
+Not Found: /assets/css/style.css
+Not Found: /assets/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /assets/img/intro/me.jpg
+Not Found: /assets/img/icons/iran.png
+Not Found: /assets/img/icons/Germany.png
+Not Found: /assets/img/icons/English.png
+Not Found: /assets/js/jquery-1.12.4.min.js
+Not Found: /assets/bootstrap/js/bootstrap.min.js
+Not Found: /assets/owlcarousel/js/owl.carousel.min.js
+Not Found: /assets/js/jquery.inview.min.js
+Not Found: /assets/js/jquery.appear.js
+Not Found: /assets/js/jquery.mixitup.js
+Not Found: /assets/js/venobox.min.js
+Not Found: /assets/js/jquery.stellar.min.js
+Not Found: /assets/js/particles.min.js
+Not Found: /assets/js/app.js
+Not Found: /assets/js/animated-text.js
+Not Found: /assets/js/animated-text-dark.js
+Not Found: /assets/js/wow.min.js
+Not Found: /assets/js/scrolltopcontrol.js
+Not Found: /assets/js/magic_mouse.js
+Not Found: /assets/js/scripts.js
+Not Found: /assets/css/materialdesignicons-min.css
+Not Found: /assets/img/icons/Azerbaijan.png
+Not Found: /assets/fonts/font-awesome.min.css
+Not Found: /assets/fonts/themify-icons.css
+Not Found: /assets/owlcarousel/css/owl.theme.css
+Not Found: /assets/owlcarousel/css/owl.carousel.css
+Not Found: /assets/img/home/home-wallpaper fit.png/assets/img/home/home-wallpaper%20fit.png
+Not Found: /assets/img/program-development.jpg
+Not Found: /assets/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /assets/fonts/themify-icons.css
+Not Found: /assets/css/materialdesignicons-min.css
+Not Found: /assets/owlcarousel/css/owl.carousel.css
+Not Found: /assets/bootstrap/css/bootstrap.min.css
+Not Found: /assets/css/venobox.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/css/style.css
+Not Found: /assets/css/magic-mouse.css
+Not Found: /assets/owlcarousel/css/owl.theme.css
+Not Found: /assets/fonts/font-awesome.min.css
+Not Found: /assets/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /assets/img/intro/me.jpg
+Not Found: /assets/img/icons/iran.png
+Not Found: /assets/img/icons/Germany.png
+Not Found: /assets/img/icons/English.png
+Not Found: /assets/js/jquery-1.12.4.min.js
+Not Found: /assets/bootstrap/js/bootstrap.min.js
+Not Found: /assets/owlcarousel/js/owl.carousel.min.js
+Not Found: /assets/js/jquery.inview.min.js
+Not Found: /assets/js/jquery.appear.js
+Not Found: /assets/img/home/home-wallpaper fit.png/assets/img/home/home-wallpaper%20fit.png
+Not Found: /assets/js/jquery.mixitup.js
+Not Found: /assets/js/venobox.min.js
+Not Found: /assets/js/jquery.stellar.min.js
+Not Found: /assets/js/particles.min.js
+Not Found: /assets/js/app.js
+Not Found: /assets/js/animated-text.js
+Not Found: /assets/js/animated-text-dark.js
+Not Found: /assets/js/wow.min.js
+Not Found: /assets/js/scrolltopcontrol.js
+Not Found: /assets/js/magic_mouse.js
+Not Found: /assets/js/scripts.js
+Not Found: /assets/img/icons/Azerbaijan.png
+Not Found: /assets/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /assets/img/program-development.jpg
+Not Found: /assets/css/materialdesignicons-min.css
+Not Found: /assets/owlcarousel/css/owl.carousel.css
+Not Found: /assets/css/animate.css
+Not Found: /assets/css/venobox.css
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /assets/img/logo/P-logo-light-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/css/style.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/venobox.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/logo/P-logo-light-removebg.png
+Not Found: /static/img/logo/P-logo-light-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/css/style.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/js/scripts.js
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/venobox.css
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/css/venobox.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/app.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/img/program-development.jpg
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/css/animate.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/venobox.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/css/venobox.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/css/animate.css
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/css/venobox.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/css/venobox.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/program-development.jpg
+Internal Server Error: /set-language/
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 180, in resolve_url
+    return reverse(to, args=args, kwargs=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/urls/base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/urls/resolvers.py", line 851, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'None' not found. 'None' is not a valid view function or pattern name.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/Django_My_resume/language/views.py", line 8, in set_language
+    return redirect(request.META.get('HTTP_REFERER'))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 49, in redirect
+    return redirect_class(resolve_url(to, *args, **kwargs))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/patronus/virtualenv/Django_My_resume/3.11/lib/python3.11/site-packages/django/shortcuts.py", line 186, in resolve_url
+    if "/" not in to and "." not in to:
+       ^^^^^^^^^^^^^
+TypeError: argument of type 'NoneType' is not iterable
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/css/venobox.css
+Not Found: /static/css/animate.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/bootstrap/css/bootstrap.min.css
+Not Found: /static/fonts/font-awesome.min.css
+Not Found: /static/fonts/themify-icons.css
+Not Found: /static/css/magic-mouse.css
+Not Found: /static/css/style.css
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+Not Found: /static/img/intro/me.jpg
+Not Found: /static/img/icons/iran.png
+Not Found: /static/img/icons/Germany.png
+Not Found: /static/img/icons/English.png
+Not Found: /static/js/jquery-1.12.4.min.js
+Not Found: /static/bootstrap/js/bootstrap.min.js
+Not Found: /static/owlcarousel/js/owl.carousel.min.js
+Not Found: /static/js/jquery.inview.min.js
+Not Found: /static/js/jquery.appear.js
+Not Found: /static/js/jquery.mixitup.js
+Not Found: /static/js/venobox.min.js
+Not Found: /static/js/jquery.stellar.min.js
+Not Found: /static/js/particles.min.js
+Not Found: /static/js/app.js
+Not Found: /static/js/animated-text.js
+Not Found: /static/js/animated-text-dark.js
+Not Found: /static/js/wow.min.js
+Not Found: /static/js/scrolltopcontrol.js
+Not Found: /static/js/magic_mouse.js
+Not Found: /static/js/scripts.js
+Not Found: /static/img/icons/Azerbaijan.png
+Not Found: /static/owlcarousel/css/owl.theme.css
+Not Found: /static/css/materialdesignicons-min.css
+Not Found: /static/css/animate.css
+Not Found: /static/owlcarousel/css/owl.carousel.css
+Not Found: /static/css/venobox.css
+Not Found: /static/img/home/home-wallpaper fit.png/static/img/home/home-wallpaper%20fit.png
+Not Found: /static/img/program-development.jpg
+Not Found: /static/img/logo/Patronus-logo-dark-nav-removebg.png
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][3128465] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/nav_sidebar.css
+[UID:1114][1970000] Child process with pid: 2008896 was killed by signal: 15, core dumped: no
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /staticfiles/img/intro/me.jpg
+Not Found: /staticfiles/img/icons/iran.png
+Not Found: /staticfiles/img/home/home-wallpaper fit.png/staticfiles/img/home/home-wallpaper%20fit.png
+Not Found: /staticfiles/img/intro/me.jpg
+Not Found: /staticfiles/img/icons/iran.png
+Not Found: /staticfiles/img/home/home-wallpaper fit.png/staticfiles/img/home/home-wallpaper%20fit.png
+Not Found: /wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /wordpress/wp-admin/setup-config.php
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/nav_sidebar.css
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:1114][2033377] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /assets/admin/js/theme.js
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /assets/img/logo/p-logo-light-removebg.png
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /favicon.ico
+Not Found: /assets/admin/css/base.css
+Not Found: /assets/admin/css/nav_sidebar.css
+Not Found: /assets/admin/css/responsive.css
+Not Found: /assets/admin/js/nav_sidebar.js
+Not Found: /assets/admin/css/login.css
+Not Found: /assets/admin/css/dark_mode.css
+Not Found: /assets/admin/js/theme.js
+Not Found: /wordpress
+Not Found: /wp
+Not Found: /bc
+Not Found: /bk
+Not Found: /backup
+Not Found: /old
+Not Found: /new
+Not Found: /main
+Not Found: /home
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /favicon.ico
+Not Found: /favicon.png
+Not Found: /favicon.ico
+Not Found: /robots.txt
+Not Found: /sitemap.xml
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /favicon.ico
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wordpress/wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php
+Not Found: /wp-admin/setup-config.php

@@ -12,7 +12,7 @@
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
         <div class="container">
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img style="width: 25%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}"
+                <img style="width: 40%;" src="{% static 'img/logo/Patronus-logo-dark-nav-removebg.png' %}"
                      alt="Patronus Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                     aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +80,7 @@
                             <p>{% trans 'Address' %} : <br/><span>{% trans 'Tehran' %}</span></p>
                         </div>
                         <div class="single-basic-info">
-                            <p>{% trans 'Nationality' %} : <br/><span>{% trans 'Tehran, Iran' %}</span></p>
+                            <p>{% trans 'Nationality' %} : <br/><span>{% trans 'Iran' %}</span></p>
                         </div>
                     </div>
                 </div><!-- END COL-->
@@ -300,19 +300,19 @@
                         </p><br>
                         <span class="active_year">2022</span>
                         <span class="active_company">- {% trans 'Python Foundation Master certificate' %}</span> |
-                        <small>{% trans '(Click for file view)' %}</small>
+                        <!--<small>{% trans '(Click for file view)' %}</small>-->
                         <p>{% trans 'From' %}<a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                         <span class="active_year">2022</span>
                         <span class="active_company">- {% trans 'Python Advanced Master certificate' %}</span> |
-                        <small>{% trans '(Click for file view)' %}</small>
+                        <!--<small>{% trans '(Click for file view)' %}</small>-->
                         <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
                         <span class="active_year">2023</span>
                         <span class="active_company">- {% trans 'Django certificate' %}</span> |
-                        <small>{% trans '(Click for file view)' %}</small>
+                        <!--<small>{% trans '(Click for file view)' %}</small>-->
                         <p>{% trans 'From' %} <a href="https://cando.ac/" target="_blank" style="color: #F0BB62;">
                             {% trans 'Cando' %}</a>
                             {% trans 'Computer Science Engineering institution.' %}</p><br>
@@ -366,18 +366,17 @@
                 </div>
                 <div class="row">
                     {% for blog in latest_blogs %}
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s"
-                             data-wow-delay="0.1s"
-                             data-wow-offset="0">
-                            <div class="single_blog">
+                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
+                            <div class="single_blog" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 16px; box-sizing: border-box;">
                                 <div class="blog-img">
-                                    <img src="{{ blog.image.url }}" class="img-fluid" alt="image"/>
-                                    <a href="{% url 'blog_detail' blog.id %}">{{ blog.datetime_created }}</a>
+                                    <img src="{{ blog.image.url }}" class="img-fluid" alt="image" style="width: 100%; height: auto;" />
+                                    <a href="{% url 'blog_detail' blog.id %}" style="display: block; margin-top: 8px;">{{ blog.datetime_created }}</a>
                                 </div>
-                                <div class="blog_content">
-                                    <h2><a href="{% url 'blog_detail' blog.id %}">{{ blog.title }}</a>
+                                <div class="blog_content" style="margin-top: auto;">
+                                    <h2 style="font-size: 18px; margin-bottom: 8px;">
+                                        <a href="{% url 'blog_detail' blog.id %}" style="text-decoration: none; color: white;">{{ blog.title }}</a>
                                     </h2>
-                                    <a href="{% url 'blog_detail' blog.id %}">{% trans "Continue Reading" %}</a>
+                                    <a href="{% url 'blog_detail' blog.id %}" style="color: yellow; text-decoration: underline;">{% trans "Continue Reading" %}</a>
                                 </div>
                             </div>
                         </div>
