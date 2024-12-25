@@ -17,7 +17,7 @@ SECRET_KEY = env.str("DJANGO_SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = env.bool("DJANGO_DEBUG")
 
-ALLOWED_HOSTS = ['patronuscode.com', 'www.patronuscode.com']
+ALLOWED_HOSTS = ['patronuscode.com', 'www.patronuscode.com', '*']
 
 SITE_ID = 1
 
@@ -43,11 +43,12 @@ INSTALLED_APPS = [
     'cms',
     'menus',
     'treebeard',
+    'django_recaptcha',
 
     # my apps
     'pages',
     'blog',
-    'language'
+    'language',
 ]
 
 MIDDLEWARE = [
@@ -85,6 +86,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
+# For when information have in .env saved
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
@@ -95,16 +97,32 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'PORT': env.str("PORT", default="5432"),
 #     }
 # }
+
+# On development mode
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'patronus_database',
-        'USER': 'patronus_userdatabase',
-        'PASSWORD': 'M12345patronusdatabase@',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+# On Deployed mode
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'patronus_database',
+#         'USER': 'patronus_userdatabase',
+#         'PASSWORD': 'M12345patronusdatabase@',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+#     }
+# }
 
 
 # Password validation
@@ -150,19 +168,23 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
+# On deployed mode
 # STATIC_URL = '/assets/'
 # STATIC_ROOT = '/home/patronus/public_html/assets/'
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'staticfiles',
+# ]
+# # Media
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = '/home/patronus/public_html/media/'
 
-STATIC_URL = '/assets/'
-STATIC_ROOT = '/home/patronus/public_html/assets/'
-STATICFILES_DIRS = [
-    BASE_DIR / 'staticfiles',
-]
-
-
+# On development mode
+STATIC_URL = 'assets/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'assets'), ]
 # Media
 MEDIA_URL = '/media/'
-MEDIA_ROOT = '/home/patronus/public_html/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
@@ -192,7 +214,7 @@ CKEDITOR_CONFIGS = {
     },
 }
 
-# MAINTENANCE_MODE Mode 503 error
+# MAINTENANCE_MODE Mode 503 error (for when website is repairing)
 MAINTENANCE_MODE = None  # (True/None)
 MAINTENANCE_MODE_IGNORE_ADMIN_SITE = True
 MAINTENANCE_MODE_TEMPLATE = "503.html"
@@ -200,3 +222,6 @@ MAINTENANCE_MODE_TEMPLATE = "503.html"
 # Custom error handler 404 error
 HANDLER404 = 'pages.views.custom_404_view'
 
+# reCAPTCHA settings
+RECAPTCHA_PUBLIC_KEY = env.str('RECAPTCHA_PUBLIC_KEY')
+RECAPTCHA_PRIVATE_KEY = env.str('RECAPTCHA_PRIVATE_KEY')

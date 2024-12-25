@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-28 21:21+0330\n"
+"POT-Creation-Date: 2024-12-25 20:10+0330\n"
 "PO-Revision-Date: 2024-11-28 21:22+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,15 +90,15 @@ msgstr "SELBSTSTÄNDIGER"
 msgid "BACKEND"
 msgstr "BACK-END ENTWICKLER"
 
-#: .\home.html:73 .\home.html:441
+#: .\home.html:73 .\home.html:446
 msgid "Email"
 msgstr "E-Mail"
 
-#: .\home.html:77 .\home.html:436
+#: .\home.html:77 .\home.html:441
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\home.html:80 .\home.html:431
+#: .\home.html:80 .\home.html:436
 msgid "Address"
 msgstr "Adresse"
 
@@ -110,9 +110,9 @@ msgstr "Tehran"
 msgid "Nationality"
 msgstr "Heimatland"
 
-#: .\home.html:83 .\home.html:432
-msgid "Tehran, Iran"
-msgstr "Tehran, Iran"
+#: .\home.html:83
+msgid "Iran"
+msgstr "Iran"
 
 #: .\home.html:96
 msgid "Profile"
@@ -191,8 +191,8 @@ msgstr "Entwicklung"
 
 #: .\home.html:194
 msgid ""
-"Create secure and scalable web applications using Python and "
-"Django,emphasizing high performance and reliability."
+"Create secure and scalable web applications using Python and Django,"
+"emphasizing high performance and reliability."
 msgstr ""
 "Erstellen Sie sichere und skalierbare Webanwendungen mit Python und Django, "
 "wobei Sie Wert auf hohe Leistung und Zuverlässigkeit legen."
@@ -203,12 +203,12 @@ msgstr "Soziale Medien"
 
 #: .\home.html:202
 msgid ""
-"In today's world, presence on social networks as well as website has a great"
-" impact on your business and introduction to customers."
+"In today's world, presence on social networks as well as website has a great "
+"impact on your business and introduction to customers."
 msgstr ""
 "In der heutigen Welt hat die Präsenz in sozialen Netzwerken sowie auf "
-"Websites einen großen Einfluss auf Ihr Geschäft und Ihre Vorstellung bei den"
-" Kunden."
+"Websites einen großen Einfluss auf Ihr Geschäft und Ihre Vorstellung bei den "
+"Kunden."
 
 #: .\home.html:209
 msgid "Branding"
@@ -370,19 +370,19 @@ msgstr ""
 msgid "Latest blogs"
 msgstr "Die neusten Blogs"
 
-#: .\home.html:380
+#: .\home.html:385
 msgid "Continue Reading"
 msgstr "Weiterlesen"
 
-#: .\home.html:390
+#: .\home.html:395
 msgid "See more ..."
 msgstr "Mehr sehen ..."
 
-#: .\home.html:407
+#: .\home.html:412
 msgid "Write Your Message"
 msgstr "Schreiben Sie Ihre Nachricht"
 
-#: .\home.html:408
+#: .\home.html:413
 msgid ""
 "I would like to receive your comments, suggestions or questions; Please "
 "enter your message."
@@ -390,9 +390,13 @@ msgstr ""
 "Ich würde gerne Ihre Kommentare, Vorschläge oder Fragen erhalten. Bitte "
 "geben Sie Ihre Nachricht ein."
 
-#: .\home.html:419
+#: .\home.html:424
 msgid "Send Message"
 msgstr "Nachricht senden"
+
+#: .\home.html:437
+msgid "Tehran, Iran"
+msgstr "Tehran, Iran"
 
 #~ msgid ""
 #~ "Django is a powerful and secure web framework for developing websites and "
@@ -405,8 +409,8 @@ msgstr "Nachricht senden"
 #~ "Entwicklung von Websites und Webanwendungen. Dieses Framework bietet "
 #~ "erweiterte Tools und Sicherheitsfunktionen, mit denen Entwickler "
 #~ "leistungsstarke Anwendungen erstellen können, die gegen Cyberangriffe "
-#~ "resistent sind. Mit seiner Philosophie „Batterien inklusive“ erfüllt Django "
-#~ "alle Anforderungen der Webentwicklung in einem umfassenden Paket."
+#~ "resistent sind. Mit seiner Philosophie „Batterien inklusive“ erfüllt "
+#~ "Django alle Anforderungen der Webentwicklung in einem umfassenden Paket."
 
 #~ msgid "Hobbies"
 #~ msgstr "Hobbys"
@@ -425,9 +429,6 @@ msgstr "Nachricht senden"
 
 #~ msgid "Pets"
 #~ msgstr "Haustiere"
-
-#~ msgid "Iran"
-#~ msgstr "Iran"
 
 #~ msgid "Persian "
 #~ msgstr "Persisch"

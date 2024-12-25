@@ -366,17 +366,23 @@
                 </div>
                 <div class="row">
                     {% for blog in latest_blogs %}
-                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0">
-                            <div class="single_blog" style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 16px; box-sizing: border-box;">
+                        <div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.1s" data-wow-offset="0">
+                            <div class="single_blog"
+                                 style="display: flex; flex-direction: column; justify-content: space-between; height: 100%; padding: 16px; box-sizing: border-box;">
                                 <div class="blog-img">
-                                    <img src="{{ blog.image.url }}" class="img-fluid" alt="image" style="width: 100%; height: auto;" />
-                                    <a href="{% url 'blog_detail' blog.id %}" style="display: block; margin-top: 8px;">{{ blog.datetime_created }}</a>
+                                    <img src="{{ blog.image.url }}" class="img-fluid" alt="image"
+                                         style="width: 100%; height: auto;"/>
+                                    <a href="{% url 'blog_detail' blog.id %}"
+                                       style="display: block; margin-top: 8px;">{{ blog.datetime_created }}</a>
                                 </div>
                                 <div class="blog_content" style="margin-top: auto;">
                                     <h2 style="font-size: 18px; margin-bottom: 8px;">
-                                        <a href="{% url 'blog_detail' blog.id %}" style="text-decoration: none; color: white;">{{ blog.title }}</a>
+                                        <a href="{% url 'blog_detail' blog.id %}"
+                                           style="text-decoration: none; color: white;">{{ blog.title }}</a>
                                     </h2>
-                                    <a href="{% url 'blog_detail' blog.id %}" style="color: yellow; text-decoration: underline;">{% trans "Continue Reading" %}</a>
+                                    <a href="{% url 'blog_detail' blog.id %}"
+                                       style="color: yellow; text-decoration: underline;">{% trans "Continue Reading" %}</a>
                                 </div>
                             </div>
                         </div>
@@ -442,9 +448,12 @@
                             </p>
                         </div>
                     </div>
-                </div><!-- END COL  -->
-            </div><!-- END ROW -->
-        </div><!-- END CONTAINER -->
+                </div>
+                <!-- END COL  -->
+            </div>
+            <!-- END ROW -->
+        </div>
+        <!-- END CONTAINER -->
     </section>
     <!-- END CONTACT -->
 

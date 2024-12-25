@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-28 21:21+0330\n"
+"POT-Creation-Date: 2024-12-25 20:11+0330\n"
 "PO-Revision-Date: 2024-11-28 21:24+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,8 +35,8 @@ msgid ""
 "We couldn't find the page you were looking for. It may have been moved or "
 "deleted, or you may have typed the URL incorrectly."
 msgstr ""
-"ما نتوانستیم صفحه مورد نظر شما را پیدا کنیم. ممکن است منتقل یا حذف شده باشد،"
-" یا ممکن است URL را اشتباه تایپ کرده باشید."
+"ما نتوانستیم صفحه مورد نظر شما را پیدا کنیم. ممکن است منتقل یا حذف شده باشد، "
+"یا ممکن است URL را اشتباه تایپ کرده باشید."
 
 #: .\404.html:45
 msgid "BACK TO HOME"
@@ -90,15 +90,15 @@ msgstr "فریلنسر"
 msgid "BACKEND"
 msgstr "بک اند"
 
-#: .\home.html:73 .\home.html:441
+#: .\home.html:73 .\home.html:446
 msgid "Email"
 msgstr "ایمیل"
 
-#: .\home.html:77 .\home.html:436
+#: .\home.html:77 .\home.html:441
 msgid "Phone"
 msgstr "تماس"
 
-#: .\home.html:80 .\home.html:431
+#: .\home.html:80 .\home.html:436
 msgid "Address"
 msgstr "آدرس"
 
@@ -110,9 +110,9 @@ msgstr "تهران"
 msgid "Nationality"
 msgstr "ملیت"
 
-#: .\home.html:83 .\home.html:432
-msgid "Tehran, Iran"
-msgstr "تهران ، ایران"
+#: .\home.html:83
+msgid "Iran"
+msgstr "ایران"
 
 #: .\home.html:96
 msgid "Profile"
@@ -132,9 +132,9 @@ msgid ""
 "developer who enjoys a wide range of hobbies, such as building web "
 "applications and coding. For me, it is more like a hobby than a job."
 msgstr ""
-"من یک برنامه‌نویس و توسعه‌دهنده وب هستم که از مجموعه‌ گسترده ای از سرگرمی‌ها"
-" لذت می‌برم، مثل ساخت برنامه‌های وب و کد نویسی . برام بیشتر مانند یک علاقه و"
-" لذت است تا اینکه یک شغل باشد ."
+"من یک برنامه‌نویس و توسعه‌دهنده وب هستم که از مجموعه‌ گسترده ای از سرگرمی‌ها لذت "
+"می‌برم، مثل ساخت برنامه‌های وب و کد نویسی . برام بیشتر مانند یک علاقه و لذت "
+"است تا اینکه یک شغل باشد ."
 
 #: .\home.html:118
 msgid ""
@@ -190,11 +190,11 @@ msgstr "توسعه"
 
 #: .\home.html:194
 msgid ""
-"Create secure and scalable web applications using Python and "
-"Django,emphasizing high performance and reliability."
+"Create secure and scalable web applications using Python and Django,"
+"emphasizing high performance and reliability."
 msgstr ""
-"ساخت برنامه‌های وب ، امن و قابل مقیاس با استفاده از پایتون و جنگو ، با تأکید"
-" بر عملکرد بالا و اعتماد‌پذیری."
+"ساخت برنامه‌های وب ، امن و قابل مقیاس با استفاده از پایتون و جنگو ، با تأکید "
+"بر عملکرد بالا و اعتماد‌پذیری."
 
 #: .\home.html:201
 msgid "Social Media"
@@ -202,11 +202,11 @@ msgstr "شبکه اجتماعی"
 
 #: .\home.html:202
 msgid ""
-"In today's world, presence on social networks as well as website has a great"
-" impact on your business and introduction to customers."
+"In today's world, presence on social networks as well as website has a great "
+"impact on your business and introduction to customers."
 msgstr ""
-"در دنیای امروز حضور در شبکه‌های اجتماعی و داشتن وبسایت تأثیر بزرگی بر "
-"کسب‌وکار دارد."
+"در دنیای امروز حضور در شبکه‌های اجتماعی و داشتن وبسایت تأثیر بزرگی بر کسب‌وکار "
+"دارد."
 
 #: .\home.html:209
 msgid "Branding"
@@ -217,8 +217,8 @@ msgid ""
 "Having a website significantly increases the visibility and credibility of "
 "the business and provides a digital storefront to the audience."
 msgstr ""
-"داشتن یک وب‌سایت به طور قابل توجهی دیده شدن و اعتبار کسب‌وکار را افزایش "
-"می‌دهد و برای مشتریان یک فروشگاه دیجیتالی فراهم می‌کند."
+"داشتن یک وب‌سایت به طور قابل توجهی دیده شدن و اعتبار کسب‌وکار را افزایش می‌دهد "
+"و برای مشتریان یک فروشگاه دیجیتالی فراهم می‌کند."
 
 #: .\home.html:217
 msgid "Strategy"
@@ -241,8 +241,8 @@ msgid ""
 "Tailored solutions to enhance online presence, improve user experience,and "
 "achieve business goals effectively."
 msgstr ""
-"راه‌حل‌های مخصوص برای بهبود حضور آنلاین، بهبود تجربه کاربری و دستیابی به "
-"اهداف کسب‌وکار به روشی مؤثر."
+"راه‌حل‌های مخصوص برای بهبود حضور آنلاین، بهبود تجربه کاربری و دستیابی به اهداف "
+"کسب‌وکار به روشی مؤثر."
 
 #: .\home.html:243
 msgid "Programming Languages"
@@ -368,19 +368,19 @@ msgstr ""
 msgid "Latest blogs"
 msgstr "تازه ترین های بلاگ"
 
-#: .\home.html:380
+#: .\home.html:385
 msgid "Continue Reading"
 msgstr "ادامه مطلب"
 
-#: .\home.html:390
+#: .\home.html:395
 msgid "See more ..."
 msgstr "مشاهده بیشتر ..."
 
-#: .\home.html:407
+#: .\home.html:412
 msgid "Write Your Message"
 msgstr "پیام خود را بگذارید"
 
-#: .\home.html:408
+#: .\home.html:413
 msgid ""
 "I would like to receive your comments, suggestions or questions; Please "
 "enter your message."
@@ -388,9 +388,13 @@ msgstr ""
 "مایلم نظرات، پیشنهادات یا سوالات شما را دریافت کنم. لطفا پیام خود را وارد "
 "کنید."
 
-#: .\home.html:419
+#: .\home.html:424
 msgid "Send Message"
 msgstr "ارسال پیام"
+
+#: .\home.html:437
+msgid "Tehran, Iran"
+msgstr "تهران ، ایران"
 
 #~ msgid ""
 #~ "Django is a powerful and secure web framework for developing websites and "
@@ -421,9 +425,6 @@ msgstr "ارسال پیام"
 
 #~ msgid "Pets"
 #~ msgstr "حیوانات خونگیم"
-
-#~ msgid "Iran"
-#~ msgstr "ایران"
 
 #~ msgid "Persian "
 #~ msgstr "فارسی"

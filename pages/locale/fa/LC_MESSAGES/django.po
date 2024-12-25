@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-11-24 18:06+0330\n"
-"PO-Revision-Date: 2024-11-24 18:06+0330\n"
+"POT-Creation-Date: 2024-12-25 20:26+0330\n"
+"PO-Revision-Date: 2024-12-25 20:28+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -18,13 +18,15 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Translated-Using: django-rosetta 0.10.0\n"
 
+#: .\forms.py:17
+msgid "Please verify you're not a robot "
+msgstr "لطفاً تأیید کنید که ربات نیستید "
+
 #: .\models.py:7
-#| msgid "name"
 msgid "Name"
 msgstr "نام"
 
 #: .\models.py:8
-#| msgid "email"
 msgid "Email"
 msgstr "ایمیل"
 
@@ -33,7 +35,6 @@ msgid "Subject"
 msgstr "موضوع"
 
 #: .\models.py:10
-#| msgid "message"
 msgid "Message"
 msgstr "پیغام"
 

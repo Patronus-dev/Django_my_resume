@@ -33,9 +33,7 @@ class HomePageView(TemplateView):
             # ارسال ایمیل
             send_mail(
                 'New Contact Message',
-                f"""Message from: {contact_message.name}\n"""
-                f"""({contact_message.email}):\n\n"""
-                f""" {contact_message.message}""",
+                f"Message from: {contact_message.name}\n({contact_message.email}):\n{contact_message.message}",
                 settings.DEFAULT_FROM_EMAIL,
                 [settings.DEFAULT_FROM_EMAIL],
                 fail_silently=False,
