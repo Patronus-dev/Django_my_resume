@@ -1,0 +1,3 @@
+deployment:
+  branch: main
+  artifact: public_html
