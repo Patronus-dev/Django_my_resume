@@ -1,3 +1,3 @@
 deployment:
   branch: main
-  artifact: /home/patronus/Django_my_resume
+  artifact: /home/patronus/Django_My_resume

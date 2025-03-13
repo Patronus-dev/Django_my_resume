@@ -1500,6 +1500,12 @@ b, strong {
     margin-bottom: -8px;
 }
 
+.g-recaptcha {
+    width: fit-content;
+    background-color: #191A1C;
+    border: none;
+}
+
 /*
 * ----------------------------------------------------------------------------------------
 * 11.END CONTACT DESIGN
