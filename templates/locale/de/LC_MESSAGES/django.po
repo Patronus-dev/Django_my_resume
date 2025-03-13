@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-25 20:10+0330\n"
-"PO-Revision-Date: 2024-11-28 21:22+0330\n"
+"POT-Creation-Date: 2025-03-13 20:18+0330\n"
+"PO-Revision-Date: 2025-03-13 20:24+0330\n"
 "Last-Translator:   <mehdii.dev@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
@@ -90,15 +90,15 @@ msgstr "SELBSTSTÄNDIGER"
 msgid "BACKEND"
 msgstr "BACK-END ENTWICKLER"
 
-#: .\home.html:73 .\home.html:446
+#: .\home.html:73 .\home.html:449
 msgid "Email"
 msgstr "E-Mail"
 
-#: .\home.html:77 .\home.html:441
+#: .\home.html:77 .\home.html:444
 msgid "Phone"
 msgstr "Telefon"
 
-#: .\home.html:80 .\home.html:436
+#: .\home.html:80 .\home.html:439
 msgid "Address"
 msgstr "Adresse"
 
@@ -191,8 +191,8 @@ msgstr "Entwicklung"
 
 #: .\home.html:194
 msgid ""
-"Create secure and scalable web applications using Python and Django,"
-"emphasizing high performance and reliability."
+"Create secure and scalable web applications using Python and "
+"Django,emphasizing high performance and reliability."
 msgstr ""
 "Erstellen Sie sichere und skalierbare Webanwendungen mit Python und Django, "
 "wobei Sie Wert auf hohe Leistung und Zuverlässigkeit legen."
@@ -203,12 +203,12 @@ msgstr "Soziale Medien"
 
 #: .\home.html:202
 msgid ""
-"In today's world, presence on social networks as well as website has a great "
-"impact on your business and introduction to customers."
+"In today's world, presence on social networks as well as website has a great"
+" impact on your business and introduction to customers."
 msgstr ""
 "In der heutigen Welt hat die Präsenz in sozialen Netzwerken sowie auf "
-"Websites einen großen Einfluss auf Ihr Geschäft und Ihre Vorstellung bei den "
-"Kunden."
+"Websites einen großen Einfluss auf Ihr Geschäft und Ihre Vorstellung bei den"
+" Kunden."
 
 #: .\home.html:209
 msgid "Branding"
@@ -290,15 +290,15 @@ msgstr "Programmier kurse"
 msgid "HTML & CSS certificate"
 msgstr "HTML & CSS Zertifikat"
 
-#: .\home.html:296 .\home.html:303 .\home.html:309 .\home.html:315
+#: .\home.html:296 .\home.html:304 .\home.html:311 .\home.html:318
 msgid "(Click for file view)"
 msgstr "(Datei anzeigen)"
 
-#: .\home.html:297 .\home.html:304 .\home.html:310 .\home.html:316
+#: .\home.html:297 .\home.html:305 .\home.html:312 .\home.html:319
 msgid "From"
 msgstr "Von"
 
-#: .\home.html:298 .\home.html:305 .\home.html:311 .\home.html:317
+#: .\home.html:298 .\home.html:306 .\home.html:313 .\home.html:320
 msgid "Cando"
 msgstr "Cando"
 
@@ -310,79 +310,82 @@ msgstr "Computer Science Engineering Institution."
 msgid "Python Foundation Master certificate"
 msgstr "Python Foundation Master Zertifikat"
 
-#: .\home.html:306 .\home.html:312 .\home.html:318
+#: .\home.html:307 .\home.html:314 .\home.html:321
 msgid "Computer Science Engineering institution."
 msgstr "Computer Science Engineering Institution."
 
-#: .\home.html:308
+#: .\home.html:309
 msgid "Python Advanced Master certificate"
 msgstr "Python Advanced Master Zertifikat"
 
-#: .\home.html:314
+#: .\home.html:316
 msgid "Django certificate"
 msgstr "Django Zertifikat"
 
-#: .\home.html:323
+#: .\home.html:326
 msgid "About me"
 msgstr "Über mich"
 
-#: .\home.html:325
+#: .\home.html:328
 msgid "Languages"
 msgstr "Sprachen"
 
-#: .\home.html:327
+#: .\home.html:330
 msgid "Persian"
 msgstr "Persisch"
 
-#: .\home.html:329
+#: .\home.html:332
 msgid "Deutsch"
 msgstr "Deutsch"
 
-#: .\home.html:332
+#: .\home.html:335
 msgid "English"
 msgstr "Englisch"
 
-#: .\home.html:335
+#: .\home.html:338
 msgid "Turkish (Azerbaijan)"
 msgstr "Türkisch (Aserbaidschan)"
 
-#: .\home.html:348
+#: .\home.html:351
 msgid "Professional Experience"
 msgstr "Berufserfahrung"
 
-#: .\home.html:349
+#: .\home.html:352
 msgid "2019 to Present"
 msgstr "2019 bis heute"
 
-#: .\home.html:350
+#: .\home.html:353
 msgid "Accountant and IT Support"
 msgstr "Buchhaltung und IT-Verantwortlicher"
 
-#: .\home.html:351
+#: .\home.html:354
+#| msgid ""
+#| "Experience in accounting and also as IT Supporter at Amer Engineering "
+#| "company."
 msgid ""
-"Experience in accounting and also as IT Supporter at Amer Engineering "
-"company."
+"Experience in accounting and also as IT Supporter at Barzin Khesht "
+"Engineering company."
 msgstr ""
-"Erfahrung in der Buchhaltung und auch als IT-Verantwortlicher bei der Amer "
-"Engineering Firma"
+"Erfahrung in der Buchhaltung und auch als IT-Verantwortlicher bei der "
+"\"Barzin Khesht\" Engineering Firma"
 
-#: .\home.html:365
+#: .\home.html:368
 msgid "Latest blogs"
 msgstr "Die neusten Blogs"
 
-#: .\home.html:385
+#: .\home.html:388
 msgid "Continue Reading"
 msgstr "Weiterlesen"
 
-#: .\home.html:395
+#: .\home.html:398
 msgid "See more ..."
 msgstr "Mehr sehen ..."
 
-#: .\home.html:412
+#: .\home.html:415
 msgid "Write Your Message"
 msgstr "Schreiben Sie Ihre Nachricht"
 
-#: .\home.html:413
+#: .\home.html:416
 msgid ""
 "I would like to receive your comments, suggestions or questions; Please "
 "enter your message."
@@ -390,11 +393,11 @@ msgstr ""
 "Ich würde gerne Ihre Kommentare, Vorschläge oder Fragen erhalten. Bitte "
 "geben Sie Ihre Nachricht ein."
 
-#: .\home.html:424
+#: .\home.html:427
 msgid "Send Message"
 msgstr "Nachricht senden"
 
-#: .\home.html:437
+#: .\home.html:440
 msgid "Tehran, Iran"
 msgstr "Tehran, Iran"
 
@@ -409,8 +412,8 @@ msgstr "Tehran, Iran"
 #~ "Entwicklung von Websites und Webanwendungen. Dieses Framework bietet "
 #~ "erweiterte Tools und Sicherheitsfunktionen, mit denen Entwickler "
 #~ "leistungsstarke Anwendungen erstellen können, die gegen Cyberangriffe "
-#~ "resistent sind. Mit seiner Philosophie „Batterien inklusive“ erfüllt "
-#~ "Django alle Anforderungen der Webentwicklung in einem umfassenden Paket."
+#~ "resistent sind. Mit seiner Philosophie „Batterien inklusive“ erfüllt Django "
+#~ "alle Anforderungen der Webentwicklung in einem umfassenden Paket."
 
 #~ msgid "Hobbies"
 #~ msgstr "Hobbys"
