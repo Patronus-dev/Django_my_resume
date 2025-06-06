@@ -112,18 +112,6 @@ DATABASES = {
     }
 }
 
-# On Deployed mode
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'patronus_database',
-#         'USER': 'patronus_userdatabase',
-#         'PASSWORD': 'M12345patronusdatabase@',
-#         'HOST': 'localhost',
-#         'PORT': '5432',
-#     }
-# }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
